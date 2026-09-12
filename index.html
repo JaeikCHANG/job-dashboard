@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>채용 트래커</title>
+<style>
+  :root {
+    --bg: #f7f7f8;
+    --card-bg: #ffffff;
+    --border: #e6e6ea;
+    --text: #2b2b33;
+    --text-sub: #8a8a94;
+    --lavender-bg: #e9e4fb; --lavender-fg: #5f4dc7;
+    --mint-bg: #d9f3e7;     --mint-fg: #1d8a66;
+    --coral-bg: #fde2dc;    --coral-fg: #d4523a;
+    --green-bg: #e4f3e7;    --green-fg: #3d8a4e;
+    --amber-bg: #fdf1dc;    --amber-fg: #b07b23;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+                 "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 24px 40px;
+  }
+  header.page-header { margin-bottom: 18px; }
+  header.page-header h1 { font-size: 22px; font-weight: 700; }
+  header.page-header p { color: var(--text-sub); font-size: 15px; margin-top: 2px; }
+
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  @media (min-width: 900px) {
+    .columns { grid-template-columns: 1fr 1fr; }
+  }
+
+  .column-header {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .column-header h2 { font-size: 18px; font-weight: 700; }
+  .column-header .count { color: var(--text-sub); font-size: 14px; }
+  .col-tint-lavender .column-header h2 { color: var(--lavender-fg); }
+  .col-tint-mint .column-header h2 { color: var(--mint-fg); }
+
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+
+  .badge {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 999px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .badge.new { background: var(--green-bg); color: var(--green-fg); }
+  .badge.source { background: var(--bg); color: var(--text-sub); border: 1px solid var(--border); }
+
+  .dday {
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--bg);
+    color: var(--text-sub);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .dday.urgent { background: var(--coral-bg); color: var(--coral-fg); }
+
+  .job-top {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .job-titles { flex: 1; min-width: 0; }
+  .job-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text);
+    text-decoration: none;
+    display: block;
+    word-break: keep-all;
+  }
+  .job-title:hover { text-decoration: underline; }
+  .job-company {
+    font-size: 14px;
+    color: var(--text-sub);
+    margin-top: 2px;
+  }
+  .job-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .job-bottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  select.status-select {
+    flex: 1;
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-family: inherit;
+    color: var(--text);
+    background: var(--card-bg);
+  }
+  .del-btn {
+    border: none;
+    background: none;
+    color: #c9c9d1;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 2px 4px 6px;
+    flex-shrink: 0;
+  }
+  .del-btn:hover { color: var(--coral-fg); }
+
+  .icon-btn {
+    width: 26px;
+    height: 26px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: none;
+    color: var(--text-sub);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .icon-btn:hover { color: var(--lavender-fg); border-color: var(--lavender-fg); }
+
+  .add-form { display: none; flex-wrap: wrap; gap: 8px; margin: 0 0 10px; }
+  .add-form.open { display: flex; }
+  .add-form input {
+    flex: 1;
+    min-width: 120px;
+    padding: 8px 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--text);
+    background: var(--card-bg);
+  }
+  .add-form input[type="date"] { flex: 0 1 150px; }
+  .add-form input[type="url"] { flex: 1 1 100%; }
+  .add-btn {
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14.5px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .add-btn:hover { border-color: var(--lavender-fg); color: var(--lavender-fg); }
+
+  .more-btn, .toggle-btn {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 9px;
+    background: none;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    color: var(--text-sub);
+    font-size: 14.5px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+  }
+  .more-btn:hover, .toggle-btn:hover { background: var(--bg); }
+
+  .empty-msg {
+    color: var(--text-sub);
+    font-size: 14.5px;
+    padding: 18px 4px;
+    text-align: center;
+  }
+
+  .archive-list { margin-top: 8px; }
+  .archive-list .card { opacity: 0.6; }
+  .recent-list { margin-top: 8px; }
+  .recent-list .card { opacity: 0.78; }
+
+  .badge.tier1 { background: var(--coral-bg); color: var(--coral-fg); }
+  .badge.tier2 { background: var(--lavender-bg); color: var(--lavender-fg); }
+  .badge.tier3 { background: var(--mint-bg); color: var(--mint-fg); }
+  .badge.closed { background: var(--bg); color: var(--text-sub); border: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <h1>채용 트래커</h1>
+    <p id="today-date"></p>
+    <p id="last-updated" style="margin-top:4px;"></p>
+  </header>
+
+  <div class="columns">
+
+    <!-- 재익 -->
+    <section class="col-tint-lavender">
+      <div class="column-header">
+        <h2>재익</h2>
+        <span class="count" id="me-count"></span>
+        <span style="flex:1"></span>
+        <button class="icon-btn" id="me-add-toggle" type="button" title="공고 직접 추가" aria-label="공고 직접 추가">＋</button>
+      </div>
+      <form class="add-form" id="me-add-form">
+        <input type="text" id="me-add-title" placeholder="공고 제목" maxlength="80" required>
+        <input type="text" id="me-add-company" placeholder="기관/학교명" maxlength="60">
+        <input type="date" id="me-add-deadline" title="지원 마감일">
+        <input type="url" id="me-add-url" placeholder="공고 링크 (URL)">
+        <button type="submit" class="add-btn">추가</button>
+      </form>
+      <div class="job-list" id="me-list"></div>
+    </section>
+
+    <!-- 흔열 -->
+    <section class="col-tint-mint">
+      <div class="column-header">
+        <h2>흔열</h2>
+        <span class="count" id="wife-count"></span>
+        <span style="flex:1"></span>
+        <button class="icon-btn" id="wife-add-toggle" type="button" title="공고 직접 추가" aria-label="공고 직접 추가">＋</button>
+      </div>
+      <form class="add-form" id="wife-add-form">
+        <input type="text" id="wife-add-title" placeholder="공고 제목" maxlength="80" required>
+        <input type="text" id="wife-add-company" placeholder="회사명" maxlength="60">
+        <input type="date" id="wife-add-deadline" title="지원 마감일">
+        <input type="url" id="wife-add-url" placeholder="공고 링크 (URL)">
+        <button type="submit" class="add-btn">추가</button>
+      </form>
+      <div class="job-list" id="wife-list"></div>
+    </section>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var STATUSES = ['지원 전', '지원 완료', '서류 결과 대기', '면접 예정', '최종 결과 대기', '합격', '불합격', '관심없음'];
+  var CLOSED_STATUSES = ['합격', '불합격', '관심없음'];
+  var VISIBLE = 8;
+  var RECENT_WINDOW_DAYS = 30;
+
+  // 흔열님 지원 우선순위 (2026-09-08 확정): 1=대기업/플랫폼, 2=숏폼전문, 3=전통 대형 제작사
+  var PRIORITY_TIERS = [
+    { tier: 1, label: '1순위·대기업', keywords: ['넷플릭스', 'Netflix', '디즈니', 'Disney', '워너브러더스', 'Warner', '티빙', 'TVING', '웨이브', 'Wavve', '카카오엔터', 'LG유플러스', 'SK브로드밴드'] },
+    { tier: 2, label: '2순위·숏폼', keywords: ['드라마박스', 'DramaBox', '릴숏', 'ReelShort', '드라마웨이브', 'DramaWave', '스푼랩스', '비글루', 'Vigloo', '레진', 'KT스튜디오지니', '리디', 'RIDI'] },
+    { tier: 3, label: '3순위·전통 제작사', keywords: ['스튜디오드래곤', 'CJ ENM', 'SLL', '에이스토리', '삼화네트웍스', '하이지음', '롯데엔터', '롯데컬처웍스', '팬엔터', new RegExp('(?<!\\w)NEW(?!\\w)')] }
+  ];
+  function priorityOf(company) {
+    if (!company) return null;
+    for (var i = 0; i < PRIORITY_TIERS.length; i++) {
+      var t = PRIORITY_TIERS[i];
+      for (var j = 0; j < t.keywords.length; j++) {
+        var kw = t.keywords[j];
+        if (kw instanceof RegExp) { if (kw.test(company)) return t; }
+        else if (company.indexOf(kw) !== -1) return t;
+      }
+    }
+    return null;
+  }
+
+  var LS = {
+    get: function (k, d) {
+      try {
+        var v = JSON.parse(localStorage.getItem(k));
+        return (v === null || v === undefined) ? d : v;
+      } catch (e) { return d; }
+    },
+    set: function (k, v) {
+      try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {}
+    }
+  };
+
+  // ---------- 오늘 날짜 ----------
+  var d = new Date();
+  var days = ['일', '월', '화', '수', '목', '금', '토'];
+  document.getElementById('today-date').textContent =
+    d.getFullYear() + '년 ' + (d.getMonth() + 1) + '월 ' + d.getDate() + '일 (' + days[d.getDay()] + ')';
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+
+  function ddayInfo(due) {
+    if (!due) return { label: '마감 미정', urgent: false, sortKey: Infinity };
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    var diff = Math.round((new Date(due + 'T00:00:00') - today) / 86400000);
+    var label;
+    if (diff === 0) label = '마감 D-DAY';
+    else if (diff > 0) label = '마감 D-' + diff;
+    else label = '마감 D+' + (-diff);
+    return { label: label, urgent: diff <= 3, sortKey: diff };
+  }
+
+  function daysSince(dateStr) {
+    if (!dateStr) return Infinity;
+    var today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return Math.round((today - new Date(dateStr + 'T00:00:00')) / 86400000);
+  }
+
+  function hashId(str) {
+    var h = 0;
+    for (var i = 0; i < str.length; i++) {
+      h = ((h << 5) - h + str.charCodeAt(i)) | 0;
+    }
+    return 'j' + Math.abs(h).toString(36);
+  }
+
+  // ---------- 상태(직접입력 항목 + 상태/삭제 오버라이드)는 localStorage ----------
+  var overrides = LS.get('job.overrides', {});   // { [id]: { status, dismissed } }
+  var manual = LS.get('job.manual', []);          // 사용자가 직접 추가한 항목 (동일 스키마 + source:'직접입력')
+
+  function saveOverrides() { LS.set('job.overrides', overrides); }
+  function saveManual() { LS.set('job.manual', manual); }
+
+  function getOverride(id) {
+    return overrides[id] || { status: '지원 전', dismissed: false };
+  }
+  function setStatus(id, status) {
+    var o = getOverride(id);
+    o.status = status;
+    overrides[id] = o;
+    saveOverrides();
+  }
+  function setDismissed(id, val) {
+    var o = getOverride(id);
+    o.dismissed = val;
+    overrides[id] = o;
+    saveOverrides();
+  }
+
+  var discovered = { items: [], lastUpdated: null };
+  var columnExpanded = { me: false, wife: false };
+  var columnArchiveOpen = { me: false, wife: false };
+  var columnRecentOpen = { me: false, wife: false };
+
+  function allItemsFor(person) {
+    var list = discovered.items.filter(function (it) { return it.person === person; });
+    list = list.concat(manual.filter(function (it) { return it.person === person; }));
+    return list;
+  }
+
+  function renderColumn(person, listElId, countElId) {
+    var listEl = document.getElementById(listElId);
+    var items = allItemsFor(person).map(function (it) {
+      var ov = getOverride(it.id);
+      return {
+        raw: it,
+        status: ov.status || '지원 전',
+        dismissed: !!ov.dismissed
+      };
+    });
+
+    items.forEach(function (it) { it.dday = ddayInfo(it.raw.deadline); });
+
+    var active = items.filter(function (it) {
+      return !it.dismissed && CLOSED_STATUSES.indexOf(it.status) === -1 && it.dday.sortKey >= 0;
+    });
+    var recent = items.filter(function (it) {
+      return !it.dismissed && CLOSED_STATUSES.indexOf(it.status) === -1 &&
+        it.dday.sortKey < 0 && -it.dday.sortKey <= RECENT_WINDOW_DAYS;
+    });
+    var archived = items.filter(function (it) {
+      return it.dismissed || CLOSED_STATUSES.indexOf(it.status) !== -1 ||
+        (it.dday.sortKey < 0 && -it.dday.sortKey > RECENT_WINDOW_DAYS);
+    });
+
+    if (person === 'wife') {
+      active.sort(function (a, b) {
+        var pa = priorityOf(a.raw.company), pb = priorityOf(b.raw.company);
+        var ta = pa ? pa.tier : 99, tb = pb ? pb.tier : 99;
+        if (ta !== tb) return ta - tb;
+        return a.dday.sortKey - b.dday.sortKey;
+      });
+    } else {
+      active.sort(function (a, b) { return a.dday.sortKey - b.dday.sortKey; });
+    }
+    recent.sort(function (a, b) { return b.dday.sortKey - a.dday.sortKey; });
+
+    document.getElementById(countElId).textContent = active.length + '건 진행 중';
+
+    listEl.innerHTML = '';
+
+    if (!active.length && !archived.length && !recent.length) {
+      var empty = document.createElement('div');
+      empty.className = 'empty-msg';
+      empty.textContent = '등록된 공고가 없습니다. 자동 수집을 기다리거나 직접 추가해보세요.';
+      listEl.appendChild(empty);
+      return;
+    }
+
+    var expanded = columnExpanded[person] || active.length <= VISIBLE;
+    var shown = expanded ? active : active.slice(0, VISIBLE);
+
+    shown.forEach(function (it) { listEl.appendChild(renderCard(it, person)); });
+
+    if (!expanded && active.length > VISIBLE) {
+      var more = document.createElement('button');
+      more.type = 'button';
+      more.className = 'more-btn';
+      more.textContent = '+' + (active.length - VISIBLE) + '건 더 보기';
+      more.addEventListener('click', function () {
+        columnExpanded[person] = true;
+        renderColumn(person, listElId, countElId);
+      });
+      listEl.appendChild(more);
+    }
+
+    if (!active.length) {
+      var empty2 = document.createElement('div');
+      empty2.className = 'empty-msg';
+      empty2.textContent = '진행 중인 공고가 없습니다.';
+      listEl.appendChild(empty2);
+    }
+
+    if (recent.length) {
+      var rtoggle = document.createElement('button');
+      rtoggle.type = 'button';
+      rtoggle.className = 'toggle-btn';
+      rtoggle.textContent = (columnRecentOpen[person] ? '최근 마감 공고 숨기기' : '최근 마감 공고 ' + recent.length + '건 보기 (참고용, ' + RECENT_WINDOW_DAYS + '일 이내)');
+      rtoggle.addEventListener('click', function () {
+        columnRecentOpen[person] = !columnRecentOpen[person];
+        renderColumn(person, listElId, countElId);
+      });
+      listEl.appendChild(rtoggle);
+
+      if (columnRecentOpen[person]) {
+        var recentWrap = document.createElement('div');
+        recentWrap.className = 'recent-list';
+        recent.forEach(function (it) { recentWrap.appendChild(renderCard(it, person)); });
+        listEl.appendChild(recentWrap);
+      }
+    }
+
+    if (archived.length) {
+      var toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'toggle-btn';
+      toggle.textContent = (columnArchiveOpen[person] ? '지난 공고 숨기기' : '지난 공고 ' + archived.length + '건 보기');
+      toggle.addEventListener('click', function () {
+        columnArchiveOpen[person] = !columnArchiveOpen[person];
+        renderColumn(person, listElId, countElId);
+      });
+      listEl.appendChild(toggle);
+
+      if (columnArchiveOpen[person]) {
+        var archiveWrap = document.createElement('div');
+        archiveWrap.className = 'archive-list';
+        archived.forEach(function (it) { archiveWrap.appendChild(renderCard(it, person)); });
+        listEl.appendChild(archiveWrap);
+      }
+    }
+  }
+
+  function renderCard(it, person) {
+    var raw = it.raw;
+    var card = document.createElement('div');
+    card.className = 'card';
+
+    var top = document.createElement('div');
+    top.className = 'job-top';
+
+    var titles = document.createElement('div');
+    titles.className = 'job-titles';
+    var titleEl;
+    if (raw.url) {
+      titleEl = document.createElement('a');
+      titleEl.href = raw.url;
+      titleEl.target = '_blank';
+      titleEl.rel = 'noopener';
+    } else {
+      titleEl = document.createElement('span');
+    }
+    titleEl.className = 'job-title';
+    titleEl.textContent = raw.title;
+    titles.appendChild(titleEl);
+    if (raw.company) {
+      var company = document.createElement('div');
+      company.className = 'job-company';
+      company.textContent = raw.company;
+      titles.appendChild(company);
+    }
+    top.appendChild(titles);
+
+    var info = ddayInfo(raw.deadline);
+    var dday = document.createElement('span');
+    dday.className = 'dday' + (info.urgent && CLOSED_STATUSES.indexOf(it.status) === -1 ? ' urgent' : '');
+    dday.textContent = info.label;
+    top.appendChild(dday);
+
+    var del = document.createElement('button');
+    del.type = 'button';
+    del.className = 'del-btn';
+    del.title = '목록에서 제거';
+    del.textContent = '×';
+    del.addEventListener('click', function () {
+      if (!confirm('"' + raw.title + '" 항목을 제거할까요?')) return;
+      if (raw.source === '직접입력') {
+        manual = manual.filter(function (m) { return m.id !== raw.id; });
+        saveManual();
+      } else {
+        setDismissed(raw.id, true);
+      }
+      renderColumn(person, person === 'me' ? 'me-list' : 'wife-list', person === 'me' ? 'me-count' : 'wife-count');
+    });
+    top.appendChild(del);
+
+    card.appendChild(top);
+
+    var meta = document.createElement('div');
+    meta.className = 'job-meta';
+    if (person === 'wife') {
+      var pr = priorityOf(raw.company);
+      if (pr) {
+        var pb = document.createElement('span');
+        pb.className = 'badge tier' + pr.tier;
+        pb.textContent = pr.label;
+        meta.appendChild(pb);
+      }
+    }
+    if (info.sortKey < 0) {
+      var cb = document.createElement('span');
+      cb.className = 'badge closed';
+      cb.textContent = '마감됨 (참고용)';
+      meta.appendChild(cb);
+    }
+    if (raw.source) {
+      var src = document.createElement('span');
+      src.className = 'badge source';
+      src.textContent = raw.source;
+      meta.appendChild(src);
+    }
+    if (raw.foundDate && daysSince(raw.foundDate) <= 2 && it.status === '지원 전') {
+      var nb = document.createElement('span');
+      nb.className = 'badge new';
+      nb.textContent = '신규';
+      meta.appendChild(nb);
+    }
+    card.appendChild(meta);
+
+    var bottom = document.createElement('div');
+    bottom.className = 'job-bottom';
+    var sel = document.createElement('select');
+    sel.className = 'status-select';
+    STATUSES.forEach(function (s) {
+      var opt = document.createElement('option');
+      opt.value = s;
+      opt.textContent = s;
+      if (s === it.status) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    sel.addEventListener('change', function () {
+      setStatus(raw.id, sel.value);
+      renderColumn(person, person === 'me' ? 'me-list' : 'wife-list', person === 'me' ? 'me-count' : 'wife-count');
+    });
+    bottom.appendChild(sel);
+    card.appendChild(bottom);
+
+    return card;
+  }
+
+  function renderAll() {
+    renderColumn('me', 'me-list', 'me-count');
+    renderColumn('wife', 'wife-list', 'wife-count');
+  }
+
+  // ---------- 직접 추가 폼 ----------
+  function wireAddForm(person, toggleId, formId, titleId, companyId, deadlineId, urlId) {
+    document.getElementById(toggleId).addEventListener('click', function () {
+      document.getElementById(formId).classList.toggle('open');
+    });
+    document.getElementById(formId).addEventListener('submit', function (e) {
+      e.preventDefault();
+      var titleInput = document.getElementById(titleId);
+      var companyInput = document.getElementById(companyId);
+      var deadlineInput = document.getElementById(deadlineId);
+      var urlInput = document.getElementById(urlId);
+      var title = titleInput.value.trim();
+      if (!title) return;
+      var url = urlInput.value.trim();
+      var id = url ? hashId(url) : hashId(person + '|' + title + '|' + Date.now());
+      manual.push({
+        id: id,
+        person: person,
+        title: title,
+        company: companyInput.value.trim(),
+        url: url || null,
+        deadline: deadlineInput.value || null,
+        source: '직접입력',
+        foundDate: new Date().toISOString().slice(0, 10)
+      });
+      saveManual();
+      titleInput.value = ''; companyInput.value = ''; deadlineInput.value = ''; urlInput.value = '';
+      document.getElementById(formId).classList.remove('open');
+      columnExpanded[person] = true;
+      renderAll();
+    });
+  }
+
+  wireAddForm('me', 'me-add-toggle', 'me-add-form', 'me-add-title', 'me-add-company', 'me-add-deadline', 'me-add-url');
+  wireAddForm('wife', 'wife-add-toggle', 'wife-add-form', 'wife-add-title', 'wife-add-company', 'wife-add-deadline', 'wife-add-url');
+
+  // ---------- 자동 수집 데이터(postings.json) 로드 ----------
+  function loadDiscovered() {
+    fetch('data/postings.json', { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (data) {
+        discovered.items = data.items || [];
+        discovered.lastUpdated = data.lastUpdated || null;
+        var lu = document.getElementById('last-updated');
+        if (discovered.lastUpdated) {
+          var ludate = new Date(discovered.lastUpdated);
+          lu.textContent = '마지막 자동 수집: ' + ludate.getFullYear() + '.' + pad(ludate.getMonth() + 1) + '.' + pad(ludate.getDate()) +
+            ' ' + pad(ludate.getHours()) + ':' + pad(ludate.getMinutes());
+        } else {
+          lu.textContent = '';
+        }
+        renderAll();
+      })
+      .catch(function () {
+        document.getElementById('last-updated').textContent = '자동 수집 데이터 없음 (직접 추가로 시작하세요)';
+        renderAll();
+      });
+  }
+
+  loadDiscovered();
+})();
+</script>
+</body>
+</html>
