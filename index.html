@@ -104,6 +104,15 @@
     word-break: keep-all;
   }
   .job-title:hover { text-decoration: underline; }
+  a.job-title {
+    text-decoration: underline;
+    text-decoration-color: var(--border);
+    text-underline-offset: 3px;
+  }
+  a.job-title:hover { text-decoration-color: currentColor; }
+  .col-tint-lavender a.job-title { color: var(--lavender-fg); }
+  .col-tint-mint a.job-title { color: var(--mint-fg); }
+  .job-title .ext-icon { font-size: 13px; opacity: 0.6; margin-left: 3px; }
   .job-company {
     font-size: 14px;
     color: var(--text-sub);
@@ -515,6 +524,12 @@
     }
     titleEl.className = 'job-title';
     titleEl.textContent = raw.title;
+    if (raw.url) {
+      var extIcon = document.createElement('span');
+      extIcon.className = 'ext-icon';
+      extIcon.textContent = '↗';
+      titleEl.appendChild(extIcon);
+    }
     titles.appendChild(titleEl);
     if (raw.company) {
       var company = document.createElement('div');
