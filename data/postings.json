@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T00:00:00+09:00",
+  "lastUpdated": "2026-09-17T23:50:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -219,6 +219,26 @@
       "url": "https://careers.hybecorp.com/ko/o/202103",
       "deadline": null,
       "source": "HYBE 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-lezhin-shortform-business-leader",
+      "person": "wife",
+      "title": "숏폼사업부 리더",
+      "company": "레진엔터테인먼트",
+      "url": "https://www.bzpp.co.kr/biz/businessDetailView/BR251112A00187",
+      "deadline": null,
+      "source": "비즈니스피플(bzpp.co.kr)",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-thesmc-shortform-pd-contract",
+      "person": "wife",
+      "title": "[제작직군] 숏폼 PD 계약직 채용",
+      "company": "더에스엠씨(The SMC)",
+      "url": "https://careers.thesmc.co.kr/ko/o/162324",
+      "deadline": null,
+      "source": "The SMC 채용페이지",
       "foundDate": "2026-09-17"
     }
   ]
