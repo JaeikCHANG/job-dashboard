@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T08:07:00+09:00",
+  "lastUpdated": "2026-09-17T09:30:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -20,6 +20,16 @@
       "deadline": null,
       "source": "잡코리아",
       "foundDate": "2026-09-12"
+    },
+    {
+      "id": "wife-astory-youtube-pd-freelance",
+      "person": "wife",
+      "title": "YouTube 영상 PD 프리랜서 경력 채용",
+      "company": "에이스토리",
+      "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/49818547",
+      "deadline": null,
+      "source": "잡코리아",
+      "foundDate": "2026-09-15"
     },
     {
       "id": "me-seoulyeongwon-elementary-athletics-coach",
@@ -120,6 +130,16 @@
       "deadline": null,
       "source": "원티드",
       "foundDate": "2026-08-18"
+    },
+    {
+      "id": "wife-ktstudiogenie-webentertainment-pd",
+      "person": "wife",
+      "title": "웹 예능 프로듀서 (PD)",
+      "company": "KT스튜디오지니",
+      "url": "https://www.wanted.co.kr/wd/378120",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-09-17"
     }
   ]
 }
