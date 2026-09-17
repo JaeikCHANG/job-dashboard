@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T21:10:00+09:00",
+  "lastUpdated": "2026-09-17T22:15:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -139,6 +139,36 @@
       "url": "https://www.wanted.co.kr/wd/378120",
       "deadline": null,
       "source": "원티드",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-vigloo-spoonlabs-ai-shortdrama-production-pd",
+      "person": "wife",
+      "title": "[Vigloo] AI 숏드라마 제작 PD (1년 계약직)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://career.spoonlabs.com/ko/o/237212",
+      "deadline": null,
+      "source": "스푼랩스 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-vigloo-spoonlabs-shortdrama-planning-pd",
+      "person": "wife",
+      "title": "[Vigloo] 숏드라마 기획 PD (경력무관/6개월 계약직)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://career.spoonlabs.com/ko/o/233135",
+      "deadline": null,
+      "source": "스푼랩스 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-vigloo-spoonlabs-ai-creative-director",
+      "person": "wife",
+      "title": "[Vigloo] AI Creative Director (1년 계약직/숏드라마)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://career.spoonlabs.com/ko/o/220081",
+      "deadline": null,
+      "source": "스푼랩스 채용페이지",
       "foundDate": "2026-09-17"
     }
   ]
