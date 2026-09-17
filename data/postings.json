@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T21:10:00+09:00",
+  "lastUpdated": "2026-09-17T00:00:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -139,6 +139,86 @@
       "url": "https://www.wanted.co.kr/wd/378120",
       "deadline": null,
       "source": "원티드",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-vigloo-spoonlabs-ai-shortdrama-production-pd",
+      "person": "wife",
+      "title": "[Vigloo] AI 숏드라마 제작 PD (1년 계약직)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://career.spoonlabs.com/ko/o/237212",
+      "deadline": null,
+      "source": "스푼랩스 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-vigloo-spoonlabs-shortdrama-planning-pd",
+      "person": "wife",
+      "title": "[Vigloo] 숏드라마 기획 PD (경력무관/6개월 계약직)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://career.spoonlabs.com/ko/o/233135",
+      "deadline": null,
+      "source": "스푼랩스 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-vigloo-spoonlabs-ai-creative-director",
+      "person": "wife",
+      "title": "[Vigloo] AI Creative Director (1년 계약직/숏드라마)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://career.spoonlabs.com/ko/o/220081",
+      "deadline": null,
+      "source": "스푼랩스 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-mopacstudio-planning-pd",
+      "person": "wife",
+      "title": "기획PD 채용(경력 10년 이상)",
+      "company": "모팩스튜디오",
+      "url": "https://cine21.com/community/recruit/view/?wr_id=22664",
+      "deadline": null,
+      "source": "씨네21(cine21) 채용게시판",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-westworldstory-drama-planning-pd-lead",
+      "person": "wife",
+      "title": "드라마 기획 PD 팀장급 (경력 6~7년)",
+      "company": "웨스트월드스토리",
+      "url": "https://cine21.com/community/recruit/view/?wr_id=21913",
+      "deadline": null,
+      "source": "씨네21(cine21) 채용게시판",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-hybe-mediastudio-content-business-planning",
+      "person": "wife",
+      "title": "콘텐츠사업기획 (경력 5년 이상)",
+      "company": "HYBE Media Studio (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/232082",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-hybe-bighitmusic-content-planning-bts",
+      "person": "wife",
+      "title": "콘텐츠기획(영상콘텐츠제작) - BTS 담당",
+      "company": "BIGHIT MUSIC (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/231174",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-hybe-bighitmusic-content-planning-cortis",
+      "person": "wife",
+      "title": "콘텐츠기획(영상콘텐츠제작) - CORTIS 담당",
+      "company": "BIGHIT MUSIC (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/202103",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
       "foundDate": "2026-09-17"
     }
   ]
