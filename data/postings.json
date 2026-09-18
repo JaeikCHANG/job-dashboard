@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-17T23:50:00+09:00",
+  "lastUpdated": "2026-09-18T09:30:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -240,6 +240,26 @@
       "deadline": null,
       "source": "The SMC 채용페이지",
       "foundDate": "2026-09-17"
+    },
+    {
+      "id": "wife-netflix-production-management-senior-manager",
+      "person": "wife",
+      "title": "Senior Manager, Production Management - Korea",
+      "company": "넷플릭스코리아(Netflix)",
+      "url": "https://explore.jobs.netflix.net/careers/job/790315182203",
+      "deadline": null,
+      "source": "Netflix Careers",
+      "foundDate": "2026-09-18"
+    },
+    {
+      "id": "wife-vigloo-spoonlabs-ai-video-creator",
+      "person": "wife",
+      "title": "[Vigloo] AI 영상 크리에이터 (AI Content Creator, 숏드라마)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://career.spoonlabs.com/ko/o/219931",
+      "deadline": null,
+      "source": "스푼랩스 채용페이지",
+      "foundDate": "2026-09-18"
     }
   ]
 }
