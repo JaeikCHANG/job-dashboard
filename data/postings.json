@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20T08:16:00+09:00",
+  "lastUpdated": "2026-09-21T09:00:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -320,6 +320,16 @@
       "deadline": null,
       "source": "링커리어",
       "foundDate": "2026-09-20"
+    },
+    {
+      "id": "wife-hybe-sourcemusic-video-content-production",
+      "person": "wife",
+      "title": "영상콘텐츠제작",
+      "company": "SOURCE MUSIC (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/213680",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-09-21"
     }
   ]
 }
