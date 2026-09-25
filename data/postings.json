@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T08:12:57+09:00",
+  "lastUpdated": "2026-09-26T08:11:22+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -330,6 +330,36 @@
       "deadline": null,
       "source": "HYBE 채용페이지",
       "foundDate": "2026-09-21"
+    },
+    {
+      "id": "wife-hybe-koz-solo-artist-video-content-jr",
+      "person": "wife",
+      "title": "솔로 아티스트 영상콘텐츠기획・제작 Jr.",
+      "company": "KOZ Entertainment (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/223325",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-09-26"
+    },
+    {
+      "id": "wife-hybe-belift-marketing-video-content-planning",
+      "person": "wife",
+      "title": "마케팅 콘텐츠기획(영상콘텐츠제작)",
+      "company": "BELIFT LAB (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/207011",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-09-26"
+    },
+    {
+      "id": "wife-hybe-belift-marketing-video-content-planning-sr",
+      "person": "wife",
+      "title": "마케팅 콘텐츠기획(영상콘텐츠제작) Sr.",
+      "company": "BELIFT LAB (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/228231",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-09-26"
     }
   ]
 }
