@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T08:14:11+09:00",
+  "lastUpdated": "2026-09-30T08:11:48+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -360,6 +360,16 @@
       "deadline": null,
       "source": "HYBE 채용페이지",
       "foundDate": "2026-09-26"
+    },
+    {
+      "id": "wife-ktstudiogenie-drama-pd",
+      "person": "wife",
+      "title": "드라마 프로듀서(PD)",
+      "company": "KT스튜디오지니",
+      "url": "https://www.wanted.co.kr/wd/388404",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-09-30"
     }
   ]
 }
