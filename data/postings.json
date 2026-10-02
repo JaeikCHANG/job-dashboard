@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T08:12:53+09:00",
+  "lastUpdated": "2026-10-03T08:13:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -370,6 +370,16 @@
       "deadline": null,
       "source": "원티드",
       "foundDate": "2026-09-30"
+    },
+    {
+      "id": "wife-spoonlabs-vigloo-shortdrama-planning-pd-contract",
+      "person": "wife",
+      "title": "[Vigloo] 숏드라마 기획 PD (6개월 계약직)",
+      "company": "스푼랩스(Vigloo)",
+      "url": "https://www.wanted.co.kr/wd/380904",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-03"
     }
   ]
 }
