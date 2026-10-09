@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-09T08:11:00+09:00",
+  "lastUpdated": "2026-10-10T08:12:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -380,6 +380,16 @@
       "deadline": null,
       "source": "원티드",
       "foundDate": "2026-10-03"
+    },
+    {
+      "id": "wife-netflix-production-management-manager-unscripted",
+      "person": "wife",
+      "title": "Manager, Production Management (Unscripted) - Korea",
+      "company": "넷플릭스코리아(Netflix)",
+      "url": "https://www.wanted.co.kr/wd/357492",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-10"
     }
   ]
 }
