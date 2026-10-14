@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13T23:15:00+09:00",
+  "lastUpdated": "2026-10-14T23:30:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -400,6 +400,16 @@
       "deadline": "2026-10-31",
       "source": "캐치(Catch)",
       "foundDate": "2026-10-11"
+    },
+    {
+      "id": "wife-ridi-shortdrama-pd-globaljp",
+      "person": "wife",
+      "title": "숏드라마 제작 PD (Global/JP)",
+      "company": "리디(RIDI)",
+      "url": "https://kowork.kr/post/3832",
+      "deadline": null,
+      "source": "kowork.kr",
+      "foundDate": "2026-10-14"
     }
   ]
 }
