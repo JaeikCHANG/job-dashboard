@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T08:10:19+09:00",
+  "lastUpdated": "2026-10-21T08:14:50+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -410,6 +410,36 @@
       "deadline": null,
       "source": "kowork.kr",
       "foundDate": "2026-10-14"
+    },
+    {
+      "id": "wife-tving-content-curation-planning",
+      "person": "wife",
+      "title": "콘텐츠 큐레이션 기획&운영 (경력무관)",
+      "company": "티빙(TVING)",
+      "url": "https://www.invione.com/jobs/recruitment/open/detail/181050",
+      "deadline": "2026-10-25",
+      "source": "invione.com (티빙 채용 공식 대행 채널)",
+      "foundDate": "2026-10-21"
+    },
+    {
+      "id": "wife-hybe-abd-artist-content-marketing",
+      "person": "wife",
+      "title": "[ABD] 아티스트 콘텐츠 마케팅(영상 콘텐츠 담당)",
+      "company": "HYBE(ABD)",
+      "url": "https://careers.hybecorp.com/ko/o/236722",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-10-21"
+    },
+    {
+      "id": "wife-hybe-bighitmusic-production-pm-cortis",
+      "person": "wife",
+      "title": "[BIGHIT MUSIC] 제작PM (CORTIS 담당)",
+      "company": "HYBE(BIGHIT MUSIC)",
+      "url": "https://careers.hybecorp.com/ko/o/210058",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-10-21"
     }
   ]
 }
