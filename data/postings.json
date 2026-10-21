@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T08:14:50+09:00",
+  "lastUpdated": "2026-10-22T08:15:38+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -440,6 +440,46 @@
       "deadline": null,
       "source": "HYBE 채용페이지",
       "foundDate": "2026-10-21"
+    },
+    {
+      "id": "wife-ridi-webnovel-pd-group-lead",
+      "person": "wife",
+      "title": "웹소설 PD 그룹장",
+      "company": "리디(RIDI)",
+      "url": "https://www.wanted.co.kr/wd/389952",
+      "deadline": "2026-11-01",
+      "source": "원티드",
+      "foundDate": "2026-10-22"
+    },
+    {
+      "id": "wife-235-ai-commerce-video-pd",
+      "person": "wife",
+      "title": "영상 PD (실사+생성형AI 커머스 콘텐츠)",
+      "company": "이삼오구",
+      "url": "https://www.wanted.co.kr/wd/377866",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-22"
+    },
+    {
+      "id": "wife-beforeafterlab-cosmetics-content-creator-pd",
+      "person": "wife",
+      "title": "화장품 콘텐츠 크리에이터 & 퍼포먼스 광고 영상 PD (AI 숏폼)",
+      "company": "비포앤애프터랩",
+      "url": "https://www.wanted.co.kr/wd/371273",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-22"
+    },
+    {
+      "id": "wife-textgroup-amorepacific-global-content-pd-shortform",
+      "person": "wife",
+      "title": "[아모레퍼시픽 투자] 글로벌 콘텐츠 PD (틱톡/릴스 숏폼)",
+      "company": "텍트그룹",
+      "url": "https://www.wanted.co.kr/wd/391024",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-22"
     }
   ]
 }
