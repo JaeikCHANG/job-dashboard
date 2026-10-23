@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T08:10:29+09:00",
+  "lastUpdated": "2026-10-24T08:13:18+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -480,6 +480,46 @@
       "deadline": null,
       "source": "원티드",
       "foundDate": "2026-10-22"
+    },
+    {
+      "id": "wife-cjenm-digital-content-pd",
+      "person": "wife",
+      "title": "디지털 콘텐츠 기획/제작 PD",
+      "company": "CJ ENM",
+      "url": "https://www.wanted.co.kr/wd/393765",
+      "deadline": "2026-11-01",
+      "source": "원티드",
+      "foundDate": "2026-10-24"
+    },
+    {
+      "id": "wife-hybe-bighitmusic-video-content-editing-txt",
+      "person": "wife",
+      "title": "영상콘텐츠편집 (TXT 담당)",
+      "company": "BIGHIT MUSIC (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/241668",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-10-24"
+    },
+    {
+      "id": "wife-hybe-bighitmusic-artist-content-production-txt",
+      "person": "wife",
+      "title": "아티스트콘텐츠 제작(영상) (TXT 담당)",
+      "company": "BIGHIT MUSIC (HYBE)",
+      "url": "https://careers.hybecorp.com/ko/o/241491",
+      "deadline": null,
+      "source": "HYBE 채용페이지",
+      "foundDate": "2026-10-24"
+    },
+    {
+      "id": "wife-medialinked-youtube-webvariety-shortform-pd",
+      "person": "wife",
+      "title": "유튜브 웹예능・숏폼 제작 PD",
+      "company": "미디어링크드",
+      "url": "https://www.wanted.co.kr/wd/392690",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-24"
     }
   ]
 }
