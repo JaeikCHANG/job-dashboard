@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T08:12:21+09:00",
+  "lastUpdated": "2026-10-25T23:30:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -520,6 +520,56 @@
       "deadline": null,
       "source": "원티드",
       "foundDate": "2026-10-24"
+    },
+    {
+      "id": "wife-witu-ai-shortform-content-pd",
+      "person": "wife",
+      "title": "AI 숏폼 콘텐츠 PD",
+      "company": "윗유(witU)",
+      "url": "https://www.wanted.co.kr/wd/368936",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-25"
+    },
+    {
+      "id": "wife-witu-shortform-content-planner",
+      "person": "wife",
+      "title": "숏폼 콘텐츠 기획자",
+      "company": "윗유(witU)",
+      "url": "https://www.wanted.co.kr/wd/392320",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-25"
+    },
+    {
+      "id": "wife-limandco-ai-video-pd",
+      "person": "wife",
+      "title": "AI 영상 PD",
+      "company": "림앤코",
+      "url": "https://www.wanted.co.kr/wd/393409",
+      "deadline": "2026-10-26",
+      "source": "원티드",
+      "foundDate": "2026-10-25"
+    },
+    {
+      "id": "wife-namerz-video-pd-beauty-lifestyle",
+      "person": "wife",
+      "title": "영상PD (뷰티/라이프스타일 브랜드)",
+      "company": "네이머즈",
+      "url": "https://www.wanted.co.kr/wd/389801",
+      "deadline": "2026-11-15",
+      "source": "원티드",
+      "foundDate": "2026-10-25"
+    },
+    {
+      "id": "wife-shortte-creator-contents-pd",
+      "person": "wife",
+      "title": "Creator Contents PD",
+      "company": "숏뜨",
+      "url": "https://www.wanted.co.kr/wd/380361",
+      "deadline": "2026-09-30",
+      "source": "원티드",
+      "foundDate": "2026-10-25"
     }
   ]
 }
