@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T08:13:21+09:00",
+  "lastUpdated": "2026-10-29T08:12:11+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -570,6 +570,26 @@
       "deadline": "2026-09-30",
       "source": "원티드",
       "foundDate": "2026-10-25"
+    },
+    {
+      "id": "wife-enternext-ai-video-creator-shortdrama",
+      "person": "wife",
+      "title": "AI 영상 크리에이터 (브랜드필름·숏드라마)",
+      "company": "엔터넥스트",
+      "url": "https://www.wanted.co.kr/wd/394416",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-29"
+    },
+    {
+      "id": "wife-metacomedy-content-production-pd",
+      "person": "wife",
+      "title": "콘텐츠 제작 PD",
+      "company": "메타코미디",
+      "url": "https://www.wanted.co.kr/wd/376284",
+      "deadline": null,
+      "source": "원티드",
+      "foundDate": "2026-10-29"
     }
   ]
 }
