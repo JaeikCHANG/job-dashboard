@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T08:15:36+09:00",
+  "lastUpdated": "2026-10-31T23:30:00+09:00",
   "items": [
     {
       "id": "wife-102cinema-luckykeumsoon-pd",
@@ -590,6 +590,36 @@
       "deadline": null,
       "source": "원티드",
       "foundDate": "2026-10-29"
+    },
+    {
+      "id": "wife-novellastudio-ai-drama-content-pd",
+      "person": "wife",
+      "title": "AI 드라마 콘텐츠 PD 채용 (경력 2년 이상)",
+      "company": "노벨라스튜디오",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2610270002162",
+      "deadline": "2026-11-15",
+      "source": "인크루트",
+      "foundDate": "2026-10-31"
+    },
+    {
+      "id": "wife-lottecultureworks-ai-content-production-pd",
+      "person": "wife",
+      "title": "[AI Studio] AI 콘텐츠 제작·프로듀싱",
+      "company": "롯데컬처웍스",
+      "url": "https://www.wanted.co.kr/wd/394963",
+      "deadline": "2026-11-09",
+      "source": "원티드",
+      "foundDate": "2026-10-31"
+    },
+    {
+      "id": "wife-enterwaypartners-ai-content-production-pd",
+      "person": "wife",
+      "title": "콘텐츠 대기업 AI 콘텐츠 제작·프로듀싱 경력사원 채용 (헤드헌팅)",
+      "company": "엔터웨이파트너스",
+      "url": "https://job.incruit.com/jobdb_info/jobpost.asp?job=2610280003111",
+      "deadline": "2026-11-27",
+      "source": "인크루트",
+      "foundDate": "2026-10-31"
     }
   ]
 }
