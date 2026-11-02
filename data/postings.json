@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-02T15:00:00+09:00",
+ "lastUpdated": "2026-11-02T20:00:00+09:00",
  "items": [
   {
    "id": "wife-102cinema-luckykeumsoon-pd",
@@ -764,6 +764,32 @@
    "url": "https://www.coupang.jobs/en/jobs/8329714/%EC%BF%A0%ED%8C%A1%ED%94%8C%EB%A0%88%EC%9D%B4-tvod-%EA%B0%9C%EB%B3%84%EA%B5%AC%EB%A7%A4-%EC%BD%98%ED%85%90%EC%B8%A0-%EC%9A%B4%EC%98%81-%EB%A7%A4%EB%8B%88%EC%A0%80-%EA%B3%84%EC%95%BD%EC%A7%811%EB%85%84/?gh_jid=8329714",
    "deadline": null,
    "source": "쿠팡 채용페이지",
+   "note": null,
+   "status": "open",
+   "checkedDate": "2026-11-02",
+   "foundDate": "2026-11-02"
+  },
+  {
+   "id": "wife-netflix-genai-integration-manager-production",
+   "person": "wife",
+   "title": "GenAI Technology Integration Manager, Production Solutions - APAC",
+   "company": "넷플릭스코리아(Netflix)",
+   "url": "https://explore.jobs.netflix.net/careers/job/790318392329",
+   "deadline": null,
+   "source": "Netflix Careers",
+   "note": "PD 직함은 아니나 생성형AI를 제작공정에 통합하는 역할(경력 10년+), AI콘텐츠 PD 전환과 연관성 참고",
+   "status": "open",
+   "checkedDate": "2026-11-02",
+   "foundDate": "2026-11-02"
+  },
+  {
+   "id": "wife-netty-ai-drama-pd-intern",
+   "person": "wife",
+   "title": "여성향 AI 드라마 PD (정규직 전환형 인턴)",
+   "company": "네티(NettY)",
+   "url": "https://www.wanted.co.kr/wd/392978",
+   "deadline": null,
+   "source": "원티드",
    "note": null,
    "status": "open",
    "checkedDate": "2026-11-02",
