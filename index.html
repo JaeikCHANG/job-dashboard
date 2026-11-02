@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>흔열 채용 트래커</title>
+<style>
+  :root {
+    --bg: #f7f7f8;
+    --card-bg: #ffffff;
+    --border: #e6e6ea;
+    --text: #2b2b33;
+    --text-sub: #8a8a94;
+    --lavender-bg: #e9e4fb; --lavender-fg: #5f4dc7;
+    --mint-bg: #d9f3e7;     --mint-fg: #1d8a66;
+    --coral-bg: #fde2dc;    --coral-fg: #d4523a;
+    --green-bg: #e4f3e7;    --green-fg: #3d8a4e;
+    --amber-bg: #fdf1dc;    --amber-fg: #b07b23;
+    --radius: 12px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+                 "Malgun Gothic", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+  @media (min-width: 600px) { .container { padding: 28px 24px 48px; } }
+
+  header.page-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+  header.page-header .hgroup { flex: 1; min-width: 0; }
+  header.page-header h1 { font-size: 22px; font-weight: 700; color: var(--mint-fg); }
+  header.page-header p { color: var(--text-sub); font-size: 14.5px; margin-top: 2px; }
+
+  .stats { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .stat {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: 8px 12px; font-size: 13.5px; color: var(--text-sub);
+  }
+  .stat b { font-size: 18px; color: var(--text); margin-right: 3px; font-variant-numeric: tabular-nums; }
+  .stat.hot b { color: var(--coral-fg); }
+  .stat.t1 b { color: var(--coral-fg); }
+
+  .filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .chip {
+    border: 1px solid var(--border); background: var(--card-bg); color: var(--text);
+    border-radius: 999px; padding: 6px 12px; font-size: 14px; font-weight: 600;
+    font-family: inherit; cursor: pointer;
+  }
+  .chip .n { color: var(--text-sub); font-weight: 500; margin-left: 3px; }
+  .chip[aria-pressed="true"] { background: var(--mint-fg); border-color: var(--mint-fg); color: #fff; }
+  .chip[aria-pressed="true"] .n { color: rgba(255,255,255,.8); }
+
+  .job-list { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 860px) { .job-list { grid-template-columns: 1fr 1fr; } }
+  .job-list .full { grid-column: 1 / -1; }
+
+  .card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 14px 16px;
+    display: flex; flex-direction: column;
+  }
+  .card.tier1 { border-left: 3px solid var(--coral-fg); }
+
+  .badge {
+    font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 999px;
+    white-space: nowrap; flex-shrink: 0;
+  }
+  .badge.new { background: var(--green-bg); color: var(--green-fg); }
+  .badge.source, .badge.checked { background: var(--bg); color: var(--text-sub); border: 1px solid var(--border); }
+  .badge.stale { background: var(--amber-bg); color: var(--amber-fg); }
+  .badge.tier1 { background: var(--coral-bg); color: var(--coral-fg); }
+  .badge.tier2 { background: var(--lavender-bg); color: var(--lavender-fg); }
+  .badge.tier3 { background: var(--mint-bg); color: var(--mint-fg); }
+  .badge.closed { background: var(--bg); color: var(--text-sub); border: 1px solid var(--border); }
+
+  .dday {
+    font-size: 12.5px; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+    background: var(--bg); color: var(--text-sub); white-space: nowrap; flex-shrink: 0;
+  }
+  .dday.urgent { background: var(--coral-bg); color: var(--coral-fg); }
+  .dday.rolling { background: var(--mint-bg); color: var(--mint-fg); }
+
+  .job-top { display: flex; align-items: flex-start; gap: 8px; }
+  .job-titles { flex: 1; min-width: 0; }
+  .job-title {
+    font-weight: 700; font-size: 16px; color: var(--text); display: block; word-break: keep-all;
+  }
+  a.job-title {
+    color: var(--mint-fg); text-decoration: underline;
+    text-decoration-color: var(--border); text-underline-offset: 3px;
+  }
+  a.job-title:hover { text-decoration-color: currentColor; }
+  .job-title .ext-icon { font-size: 13px; opacity: 0.6; margin-left: 3px; }
+  .job-company { font-size: 14px; color: var(--text-sub); margin-top: 2px; }
+  .job-note { font-size: 13px; color: var(--text-sub); margin-top: 6px; }
+  .job-meta { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .job-bottom { display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 10px; }
+  select.status-select {
+    flex: 1; padding: 6px 8px; border: 1px solid var(--border); border-radius: 8px;
+    font-size: 13.5px; font-family: inherit; color: var(--text); background: var(--card-bg);
+  }
+  .del-btn {
+    border: none; background: none; color: #c9c9d1; font-size: 18px; line-height: 1;
+    cursor: pointer; padding: 4px 2px 4px 6px; flex-shrink: 0;
+  }
+  .del-btn:hover { color: var(--coral-fg); }
+
+  .icon-btn {
+    height: 32px; padding: 0 12px; border: 1px solid var(--border); border-radius: 8px;
+    background: var(--card-bg); color: var(--text-sub); font-size: 14px; font-weight: 600;
+    font-family: inherit; cursor: pointer; flex-shrink: 0;
+  }
+  .icon-btn:hover { color: var(--mint-fg); border-color: var(--mint-fg); }
+
+  .add-form { display: none; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+  .add-form.open { display: flex; }
+  .add-form input {
+    flex: 1; min-width: 120px; padding: 8px 10px; border: 1px solid var(--border);
+    border-radius: 8px; font-size: 15px; font-family: inherit; color: var(--text); background: var(--card-bg);
+  }
+  .add-form input[type="date"] { flex: 0 1 150px; }
+  .add-form input[type="url"] { flex: 1 1 100%; }
+  .add-btn {
+    padding: 8px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg);
+    color: var(--text); font-size: 14.5px; font-weight: 600; font-family: inherit; cursor: pointer;
+  }
+  .add-btn:hover { border-color: var(--mint-fg); color: var(--mint-fg); }
+
+  .more-btn, .toggle-btn {
+    display: block; width: 100%; margin-top: 4px; padding: 9px; background: none;
+    border: 1px dashed var(--border); border-radius: 8px; color: var(--text-sub);
+    font-size: 14.5px; font-weight: 600; font-family: inherit; cursor: pointer;
+  }
+  .more-btn:hover, .toggle-btn:hover { background: var(--card-bg); }
+  .empty-msg { color: var(--text-sub); font-size: 14.5px; padding: 18px 4px; text-align: center; }
+  .archive-list { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 8px; }
+  @media (min-width: 860px) { .archive-list { grid-template-columns: 1fr 1fr; } }
+  .archive-list .card { opacity: 0.6; }
+  .legend { font-size: 12.5px; color: var(--text-sub); margin-top: 22px; line-height: 1.7; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header class="page-header">
+    <div class="hgroup">
+      <h1>흔열 채용 트래커</h1>
+      <p id="today-date"></p>
+      <p id="last-updated"></p>
+    </div>
+    <button class="icon-btn" id="add-toggle" type="button">＋ 직접 추가</button>
+  </header>
+
+  <form class="add-form" id="add-form">
+    <input type="text" id="add-title" placeholder="공고 제목" maxlength="80" required>
+    <input type="text" id="add-company" placeholder="회사명" maxlength="60">
+    <input type="date" id="add-deadline" title="지원 마감일 (실제 지원처 기준)">
+    <input type="url" id="add-url" placeholder="공고 링크 (URL)">
+    <button type="submit" class="add-btn">추가</button>
+  </form>
+
+  <div class="stats" id="stats"></div>
+  <div class="filters" id="filters" role="group" aria-label="공고 필터"></div>
+  <div class="job-list" id="job-list"></div>
+
+  <p class="legend">
+    마감일은 실제 지원처(회사 채용페이지) 기준입니다. 포털과 날짜가 다르면 지원처 날짜를 따릅니다.<br>
+    상시 채용 공고는 자동 수집 때마다 링크를 다시 확인하고, 마감되거나 삭제된 공고는 "지난 공고"로 내려갑니다.
+    14일 넘게 확인되지 않은 상시 공고도 자동으로 내려갑니다.
+  </p>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var STATUSES = ['지원 전', '지원 완료', '서류 결과 대기', '면접 예정', '최종 결과 대기', '합격', '불합격', '관심없음'];
+  var CLOSED_STATUSES = ['합격', '불합격', '관심없음'];
+  var VISIBLE = 12;
+  var STALE_WARN_DAYS = 7;    // 상시 공고: 이 기간 넘게 재확인 안 되면 "확인 필요"
+  var STALE_DROP_DAYS = 14;   // 상시 공고: 이 기간 넘게 재확인 안 되면 지난 공고로
+  var SOON_DAYS = 7;
+
+  // 지원 우선순위 (2026-11-02 갱신): 1=티빙급 이상, 2=숏폼 전문, 3=전통 제작사
+  var PRIORITY_TIERS = [
+    { tier: 1, label: '1순위·티빙급 이상', keywords: ['넷플릭스', 'Netflix', '디즈니', 'Disney', '워너브러더스', 'Warner',
+      '티빙', 'TVING', '쿠팡플레이', 'Coupang Play', new RegExp('(?<!드라마)웨이브'), 'Wavve', 'wavve',
+      'CJ ENM', 'tvN', '스튜디오드래곤', 'Studio Dragon', 'JTBC', 'SLL', 'KBS', 'MBC', 'SBS',
+      'HYBE', '하이브', '카카오엔터', 'LG유플러스', 'SK브로드밴드'] },
+    { tier: 2, label: '2순위·숏폼', keywords: ['드라마박스', 'DramaBox', '릴숏', 'ReelShort', '드라마웨이브', 'DramaWave',
+      '스푼랩스', '비글루', 'Vigloo', '레진', 'KT스튜디오지니', '리디', 'RIDI'] },
+    { tier: 3, label: '3순위·전통 제작사', keywords: ['에이스토리', '삼화네트웍스', '하이지음', '롯데엔터', '롯데컬처웍스',
+      '팬엔터', new RegExp('(?<!\\w)NEW(?!\\w)')] }
+  ];
+  function priorityOf(company) {
+    if (!company) return null;
+    for (var i = 0; i < PRIORITY_TIERS.length; i++) {
+      var t = PRIORITY_TIERS[i];
+      for (var j = 0; j < t.keywords.length; j++) {
+        var kw = t.keywords[j];
+        if (kw instanceof RegExp) { if (kw.test(company)) return t; }
+        else if (company.indexOf(kw) !== -1) return t;
+      }
+    }
+    return null;
+  }
+
+  var LS = {
+    get: function (k, d) {
+      try { var v = JSON.parse(localStorage.getItem(k)); return (v === null || v === undefined) ? d : v; }
+      catch (e) { return d; }
+    },
+    set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+
+  var days = ['일', '월', '화', '수', '목', '금', '토'];
+  var now = new Date();
+  document.getElementById('today-date').textContent =
+    now.getFullYear() + '년 ' + (now.getMonth() + 1) + '월 ' + now.getDate() + '일 (' + days[now.getDay()] + ')';
+
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today0() { var t = new Date(); t.setHours(0, 0, 0, 0); return t; }
+  function diffDays(dateStr) { return Math.round((new Date(dateStr + 'T00:00:00') - today0()) / 86400000); }
+  function daysSince(dateStr) { return dateStr ? -diffDays(dateStr) : Infinity; }
+  function md(dateStr) { var p = dateStr.split('-'); return (+p[1]) + '/' + (+p[2]); }
+
+  function hashId(str) {
+    var h = 0;
+    for (var i = 0; i < str.length; i++) h = ((h << 5) - h + str.charCodeAt(i)) | 0;
+    return 'j' + Math.abs(h).toString(36);
+  }
+
+  // ---------- 진행 상태(브라우저별) — 기존 키 그대로 유지 ----------
+  var overrides = LS.get('job.overrides', {});
+  var manual = LS.get('job.manual', []).filter(function (m) { return m.person !== 'me'; });
+  function saveOverrides() { LS.set('job.overrides', overrides); }
+  function saveManual() { LS.set('job.manual', manual); }
+  function getOverride(id) { return overrides[id] || { status: '지원 전', dismissed: false }; }
+  function setOverride(id, patch) {
+    var o = getOverride(id);
+    for (var k in patch) o[k] = patch[k];
+    overrides[id] = o; saveOverrides();
+  }
+
+  var discovered = [];
+  var filter = 'all';
+  var expanded = false;
+  var archiveOpen = false;
+
+  // 공고 하나를 진행 중 / 지난 공고로 분류
+  function classify(raw) {
+    var ov = getOverride(raw.id);
+    var it = { raw: raw, status: ov.status || '지원 전', dismissed: !!ov.dismissed, tier: priorityOf(raw.company) };
+    var userClosed = it.dismissed || CLOSED_STATUSES.indexOf(it.status) !== -1;
+    var applied = it.status !== '지원 전';
+    if (raw.deadline) {
+      var d = diffDays(raw.deadline);
+      it.dday = { label: d === 0 ? '마감 D-DAY' : (d > 0 ? '마감 D-' + d : '마감 ' + md(raw.deadline)), urgent: d >= 0 && d <= 3, sort: d };
+      it.closedReason = d < 0 ? '마감일 경과' : null;
+    } else {
+      it.dday = { label: '상시 채용', rolling: true, sort: 1000 };
+      var age = raw.source === '직접입력' ? 0 : daysSince(raw.checkedDate || raw.foundDate);
+      it.stale = age > STALE_WARN_DAYS;
+      it.closedReason = age > STALE_DROP_DAYS ? STALE_DROP_DAYS + '일 넘게 확인 안 됨' : null;
+    }
+    if (raw.status === 'closed') it.closedReason = '마감 확인' + (raw.note ? ' · ' + raw.note : '');
+    // 이미 지원한 공고는 공고가 내려가도 결과 나올 때까지 진행 중에 남김
+    it.active = !userClosed && (!it.closedReason || applied);
+    return it;
+  }
+
+  function allItems() {
+    return discovered.concat(manual).filter(function (it) { return it.person === undefined || it.person === 'wife'; }).map(classify);
+  }
+
+  function isNew(it) { return it.raw.foundDate && daysSince(it.raw.foundDate) <= 3 && it.status === '지원 전'; }
+
+  var FILTERS = [
+    { key: 'all', label: '전체', test: function () { return true; } },
+    { key: 'tier1', label: '1순위만', test: function (it) { return it.tier && it.tier.tier === 1; } },
+    { key: 'soon', label: '7일 내 마감', test: function (it) { return it.raw.deadline && it.dday.sort <= SOON_DAYS; } },
+    { key: 'new', label: '신규', test: isNew },
+    { key: 'applied', label: '지원 진행 중', test: function (it) { return it.status !== '지원 전'; } }
+  ];
+
+  function render() {
+    var items = allItems();
+    var active = items.filter(function (it) { return it.active; });
+    var archived = items.filter(function (it) { return !it.active; });
+
+    active.sort(function (a, b) {
+      var ta = a.tier ? a.tier.tier : 99, tb = b.tier ? b.tier.tier : 99;
+      if (ta !== tb) return ta - tb;
+      if (a.dday.sort !== b.dday.sort) return a.dday.sort - b.dday.sort;
+      return (b.raw.foundDate || '').localeCompare(a.raw.foundDate || '');
+    });
+    archived.sort(function (a, b) { return (b.raw.foundDate || '').localeCompare(a.raw.foundDate || ''); });
+
+    // 요약
+    var t1 = active.filter(FILTERS[1].test).length;
+    var soon = active.filter(FILTERS[2].test).length;
+    document.getElementById('stats').innerHTML =
+      '<div class="stat"><b>' + active.length + '</b>건 진행 중</div>' +
+      '<div class="stat t1"><b>' + t1 + '</b>건 1순위</div>' +
+      '<div class="stat hot"><b>' + soon + '</b>건 7일 내 마감</div>';
+
+    // 필터
+    var fEl = document.getElementById('filters');
+    fEl.innerHTML = '';
+    FILTERS.forEach(function (f) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'chip';
+      b.setAttribute('aria-pressed', filter === f.key ? 'true' : 'false');
+      b.innerHTML = f.label + '<span class="n">' + active.filter(f.test).length + '</span>';
+      b.addEventListener('click', function () { filter = f.key; expanded = false; render(); });
+      fEl.appendChild(b);
+    });
+
+    var curFilter = FILTERS.filter(function (f) { return f.key === filter; })[0];
+    var shownAll = active.filter(curFilter.test);
+
+    var listEl = document.getElementById('job-list');
+    listEl.innerHTML = '';
+
+    if (!shownAll.length) {
+      var empty = document.createElement('div');
+      empty.className = 'empty-msg full';
+      empty.textContent = filter === 'all' ? '진행 중인 공고가 없습니다.' : '조건에 맞는 공고가 없습니다.';
+      listEl.appendChild(empty);
+    }
+
+    var limit = (expanded || shownAll.length <= VISIBLE) ? shownAll.length : VISIBLE;
+    shownAll.slice(0, limit).forEach(function (it) { listEl.appendChild(renderCard(it)); });
+
+    if (limit < shownAll.length) {
+      var more = document.createElement('button');
+      more.type = 'button'; more.className = 'more-btn full';
+      more.textContent = '+' + (shownAll.length - limit) + '건 더 보기';
+      more.addEventListener('click', function () { expanded = true; render(); });
+      listEl.appendChild(more);
+    }
+
+    if (archived.length && filter === 'all') {
+      var toggle = document.createElement('button');
+      toggle.type = 'button'; toggle.className = 'toggle-btn full';
+      toggle.textContent = archiveOpen ? '지난 공고 숨기기' : '지난 공고 ' + archived.length + '건 보기 (마감·삭제·결과 확정)';
+      toggle.addEventListener('click', function () { archiveOpen = !archiveOpen; render(); });
+      listEl.appendChild(toggle);
+      if (archiveOpen) {
+        var wrap = document.createElement('div');
+        wrap.className = 'archive-list full';
+        archived.forEach(function (it) { wrap.appendChild(renderCard(it)); });
+        listEl.appendChild(wrap);
+      }
+    }
+  }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+
+  function renderCard(it) {
+    var raw = it.raw;
+    var card = el('div', 'card' + (it.tier && it.tier.tier === 1 && it.active ? ' tier1' : ''));
+
+    var top = el('div', 'job-top');
+    var titles = el('div', 'job-titles');
+    var titleEl;
+    if (raw.url) {
+      titleEl = el('a', 'job-title', raw.title);
+      titleEl.href = raw.url; titleEl.target = '_blank'; titleEl.rel = 'noopener';
+      titleEl.appendChild(el('span', 'ext-icon', '↗'));
+    } else {
+      titleEl = el('span', 'job-title', raw.title);
+    }
+    titles.appendChild(titleEl);
+    if (raw.company) titles.appendChild(el('div', 'job-company', raw.company));
+    top.appendChild(titles);
+
+    var dd = el('span', 'dday' + (it.active && it.dday.urgent ? ' urgent' : '') + (it.active && it.dday.rolling ? ' rolling' : ''), it.dday.label);
+    top.appendChild(dd);
+
+    var del = el('button', 'del-btn', '×');
+    del.type = 'button'; del.title = '목록에서 제거';
+    del.addEventListener('click', function () {
+      if (!confirm('"' + raw.title + '" 항목을 목록에서 제거할까요?')) return;
+      if (raw.source === '직접입력') { manual = manual.filter(function (m) { return m.id !== raw.id; }); saveManual(); }
+      else setOverride(raw.id, { dismissed: true });
+      render();
+    });
+    top.appendChild(del);
+    card.appendChild(top);
+
+    var meta = el('div', 'job-meta');
+    if (it.tier) meta.appendChild(el('span', 'badge tier' + it.tier.tier, it.tier.label));
+    if (!it.active && it.closedReason) meta.appendChild(el('span', 'badge closed', it.closedReason));
+    else if (it.active && it.closedReason) meta.appendChild(el('span', 'badge stale', '공고 내려감 · 지원 건이라 유지'));
+    if (isNew(it) && it.active) meta.appendChild(el('span', 'badge new', '신규'));
+    if (it.active && it.stale && !it.closedReason) meta.appendChild(el('span', 'badge stale', '재확인 필요'));
+    if (raw.source) meta.appendChild(el('span', 'badge source', raw.source));
+    if (raw.checkedDate && raw.source !== '직접입력') meta.appendChild(el('span', 'badge checked', md(raw.checkedDate) + ' 확인'));
+    card.appendChild(meta);
+
+    if (raw.note && raw.status !== 'closed') card.appendChild(el('div', 'job-note', raw.note));
+
+    var bottom = el('div', 'job-bottom');
+    var sel = el('select', 'status-select');
+    sel.setAttribute('aria-label', '지원 상태');
+    STATUSES.forEach(function (s) {
+      var opt = el('option', null, s); opt.value = s;
+      if (s === it.status) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    sel.addEventListener('change', function () { setOverride(raw.id, { status: sel.value }); render(); });
+    bottom.appendChild(sel);
+    card.appendChild(bottom);
+    return card;
+  }
+
+  // ---------- 직접 추가 ----------
+  document.getElementById('add-toggle').addEventListener('click', function () {
+    document.getElementById('add-form').classList.toggle('open');
+  });
+  document.getElementById('add-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var g = function (id) { return document.getElementById(id); };
+    var title = g('add-title').value.trim();
+    if (!title) return;
+    var url = g('add-url').value.trim();
+    manual.push({
+      id: url ? hashId(url) : hashId('wife|' + title + '|' + Date.now()),
+      person: 'wife', title: title, company: g('add-company').value.trim(),
+      url: url || null, deadline: g('add-deadline').value || null,
+      source: '직접입력', foundDate: new Date().toISOString().slice(0, 10)
+    });
+    saveManual();
+    ['add-title', 'add-company', 'add-deadline', 'add-url'].forEach(function (id) { g(id).value = ''; });
+    g('add-form').classList.remove('open');
+    filter = 'all'; expanded = true;
+    render();
+  });
+
+  // ---------- 자동 수집 데이터 ----------
+  fetch('data/postings.json', { cache: 'no-store' })
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) {
+      discovered = (data.items || []).filter(function (it) { return !it.person || it.person === 'wife'; });
+      if (data.lastUpdated) {
+        var lu = new Date(data.lastUpdated);
+        document.getElementById('last-updated').textContent = '마지막 자동 수집·재확인: ' + lu.getFullYear() + '.' +
+          pad(lu.getMonth() + 1) + '.' + pad(lu.getDate()) + ' ' + pad(lu.getHours()) + ':' + pad(lu.getMinutes());
+      }
+      render();
+    })
+    .catch(function () {
+      document.getElementById('last-updated').textContent = '자동 수집 데이터 없음 (직접 추가로 시작하세요)';
+      render();
+    });
+})();
+</script>
+</body>
+</html>
