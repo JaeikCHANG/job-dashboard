@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-02T20:00:00+09:00",
+ "lastUpdated": "2026-11-04T08:13:00+09:00",
  "items": [
   {
    "id": "wife-102cinema-luckykeumsoon-pd",
@@ -794,6 +794,45 @@
    "status": "open",
    "checkedDate": "2026-11-02",
    "foundDate": "2026-11-02"
+  },
+  {
+   "id": "wife-ktstudiogenie-film-business-team",
+   "person": "wife",
+   "title": "영화사업팀 (투자·배급·제작관리)",
+   "company": "KT스튜디오지니",
+   "url": "https://www.wanted.co.kr/wd/389404",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중으로 추정. PD 직무는 아니고 영화사업(투자·배급·제작관리) 직군",
+   "status": "open",
+   "checkedDate": "2026-11-04",
+   "foundDate": "2026-11-04"
+  },
+  {
+   "id": "wife-kwosi-content-pd",
+   "person": "wife",
+   "title": "콘텐츠 PD (Content Producer)",
+   "company": "쿼시",
+   "url": "https://www.wanted.co.kr/wd/395253",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중으로 추정",
+   "status": "open",
+   "checkedDate": "2026-11-04",
+   "foundDate": "2026-11-04"
+  },
+  {
+   "id": "wife-mym-entertainment-program-pd",
+   "person": "wife",
+   "title": "프로그램 기획/편성 PD 경력자 채용",
+   "company": "엠와이엠(MYM Entertainment)",
+   "url": "https://job.incruit.com/entry/jobpost.asp?job=2610270000170",
+   "deadline": "2026-11-26",
+   "source": "인크루트",
+   "note": null,
+   "status": "open",
+   "checkedDate": "2026-11-04",
+   "foundDate": "2026-11-04"
   }
  ]
 }
