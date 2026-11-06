@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-06T08:13:35+09:00",
+ "lastUpdated": "2026-11-06T23:20:00+09:00",
  "items": [
   {
    "id": "wife-102cinema-luckykeumsoon-pd",
@@ -833,6 +833,19 @@
    "status": "open",
    "checkedDate": "2026-11-04",
    "foundDate": "2026-11-04"
+  },
+  {
+   "id": "wife-madeon-ai-content-producer",
+   "person": "wife",
+   "title": "AI 콘텐츠 프로듀서",
+   "company": "메이드온",
+   "url": "https://career.rememberapp.co.kr/job/posting/343328",
+   "deadline": null,
+   "source": "리멤버",
+   "note": "채용시마감(상시). 생성형AI 이미지/영상 제작, WATERBOMB 등 공연/페스티벌/K-pop 콘텐츠 제작",
+   "status": "open",
+   "checkedDate": "2026-11-06",
+   "foundDate": "2026-11-06"
   }
  ]
 }
