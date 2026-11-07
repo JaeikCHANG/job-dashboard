@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-08T08:13:48+09:00",
+ "lastUpdated": "2026-11-08T08:18:38+09:00",
  "items": [
   {
    "id": "wife-102cinema-luckykeumsoon-pd",
@@ -846,6 +846,32 @@
    "status": "open",
    "checkedDate": "2026-11-06",
    "foundDate": "2026-11-06"
+  },
+  {
+   "id": "wife-limandco-ai-motion-video-pd",
+   "person": "wife",
+   "title": "영상 PD (모션그래픽・AI 콘텐츠 제작)",
+   "company": "림앤코",
+   "url": "https://www.wanted.co.kr/wd/394929",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인. 기존 등록된 림앤코 wd/393409(마감)와는 별개의 신규 공고",
+   "status": "open",
+   "checkedDate": "2026-11-08",
+   "foundDate": "2026-11-08"
+  },
+  {
+   "id": "wife-phent-ai-first-content-pd",
+   "person": "wife",
+   "title": "콘텐츠 기획·제작 PD (커머스·엔터·그룹 라이브, AI 퍼스트)",
+   "company": "PH엔터테인먼트",
+   "url": "https://www.i-boss.co.kr/ab-2795-7666",
+   "deadline": null,
+   "source": "i-boss",
+   "note": "i-boss 상세페이지 WebFetch 차단(403)으로 마감일 미확인. 경력 1~5년, 서울 강남구",
+   "status": "open",
+   "checkedDate": "2026-11-08",
+   "foundDate": "2026-11-08"
   }
  ]
 }
