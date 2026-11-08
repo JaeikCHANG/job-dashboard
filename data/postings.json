@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-08T08:18:38+09:00",
+ "lastUpdated": "2026-11-09T08:13:41+09:00",
  "items": [
   {
    "id": "wife-102cinema-luckykeumsoon-pd",
@@ -872,6 +872,32 @@
    "status": "open",
    "checkedDate": "2026-11-08",
    "foundDate": "2026-11-08"
+  },
+  {
+   "id": "wife-bmymarketer-shortform-pd",
+   "person": "wife",
+   "title": "숏폼제작 PD (1년 이상)",
+   "company": "비마이마케터",
+   "url": "https://www.wanted.co.kr/wd/371266",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 상시채용 추정",
+   "status": "open",
+   "checkedDate": "2026-11-09",
+   "foundDate": "2026-11-09"
+  },
+  {
+   "id": "wife-nextplayer-content-pd",
+   "person": "wife",
+   "title": "컨텐츠 PD",
+   "company": "넥스트플레이어",
+   "url": "https://www.wanted.co.kr/wd/302021",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 경력 4~10년(검색결과 기준)",
+   "status": "open",
+   "checkedDate": "2026-11-09",
+   "foundDate": "2026-11-09"
   }
  ]
 }
