@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-09T08:13:41+09:00",
+ "lastUpdated": "2026-11-10T08:13:19+09:00",
  "items": [
   {
    "id": "wife-102cinema-luckykeumsoon-pd",
@@ -898,6 +898,58 @@
    "status": "open",
    "checkedDate": "2026-11-09",
    "foundDate": "2026-11-09"
+  },
+  {
+   "id": "wife-unx-ai-content-producer",
+   "person": "wife",
+   "title": "AI 콘텐츠 프로듀서",
+   "company": "UNX",
+   "url": "https://www.wanted.co.kr/wd/382356",
+   "deadline": null,
+   "source": "원티드",
+   "note": "AI 콘텐츠 PD 키워드 검색. 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인. AI캐릭터 담당, 직접 영상편집 불요",
+   "status": "open",
+   "checkedDate": "2026-11-10",
+   "foundDate": "2026-11-10"
+  },
+  {
+   "id": "wife-morpheus-ai-content-artist",
+   "person": "wife",
+   "title": "AI컨텐츠제작 아티스트",
+   "company": "모피어스",
+   "url": "https://www.wanted.co.kr/wd/375809",
+   "deadline": null,
+   "source": "원티드",
+   "note": "AI 콘텐츠 PD 키워드 검색. 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인. 생성형AI 이미지/영상 제작 경력 1~5년",
+   "status": "open",
+   "checkedDate": "2026-11-10",
+   "foundDate": "2026-11-10"
+  },
+  {
+   "id": "wife-eostudio-cp-junior-inthiswork",
+   "person": "wife",
+   "title": "콘텐츠 프로듀서 (신입)",
+   "company": "EO STUDIO",
+   "url": "https://inthiswork.com/?p=361332",
+   "deadline": null,
+   "source": "inthiswork.com",
+   "note": "AI 콘텐츠 PD 키워드 검색. 리서치~편집까지 AI도구 실무활용, 신입 가능. 기존 등록된 '이오스튜디오'(wd/147398, 마감)와 동일 업체 여부 미확인",
+   "status": "open",
+   "checkedDate": "2026-11-10",
+   "foundDate": "2026-11-10"
+  },
+  {
+   "id": "wife-reconlabs-shortdrama-producer",
+   "person": "wife",
+   "title": "숏드라마 시리즈 프로듀서 (기획·연출)",
+   "company": "리콘랩스",
+   "url": "https://www.wanted.co.kr/wd/372563",
+   "deadline": null,
+   "source": "원티드",
+   "note": "2순위급 숏폼전문 신규 업체(GenPresso AI 숏드라마 제작). 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 강남구, 경력1~5년 계약직",
+   "status": "open",
+   "checkedDate": "2026-11-10",
+   "foundDate": "2026-11-10"
   }
  ]
 }
