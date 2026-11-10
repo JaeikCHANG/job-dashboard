@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-10T08:13:19+09:00",
+ "lastUpdated": "2026-11-11T08:15:00+09:00",
  "items": [
   {
    "id": "wife-102cinema-luckykeumsoon-pd",
@@ -950,6 +950,58 @@
    "status": "open",
    "checkedDate": "2026-11-10",
    "foundDate": "2026-11-10"
+  },
+  {
+   "id": "wife-nextplayer-brand-content-pd",
+   "person": "wife",
+   "title": "브랜드 콘텐츠 PD",
+   "company": "넥스트플레이어",
+   "url": "https://www.wanted.co.kr/wd/393531",
+   "deadline": null,
+   "source": "원티드",
+   "note": "상시채용. 서울 성동구, 경력 1~15년. 기존 등록된 넥스트플레이어 '컨텐츠 PD'(wd/302021)와는 별개의 공고",
+   "status": "open",
+   "checkedDate": "2026-11-11",
+   "foundDate": "2026-11-11"
+  },
+  {
+   "id": "wife-blackpaper-jonathan-channel-pd",
+   "person": "wife",
+   "title": "조나단 채널 PD (3~4년차)",
+   "company": "블랙페이퍼",
+   "url": "https://www.wanted.co.kr/wd/392327",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 경력 3~5년, 서울 마포구",
+   "status": "open",
+   "checkedDate": "2026-11-11",
+   "foundDate": "2026-11-11"
+  },
+  {
+   "id": "wife-studiooverlap-mimimnu-content-pd-lead",
+   "person": "wife",
+   "title": "미미미누 유튜브 채널 콘텐츠 PD 팀장",
+   "company": "스튜디오오버랩",
+   "url": "https://www.wanted.co.kr/wd/379044",
+   "deadline": null,
+   "source": "원티드",
+   "note": "상시채용(검색결과 기준). 원티드 상세페이지 WebFetch 차단(403)으로 상세 마감일 미확인, 실무경력 5년 이상",
+   "status": "open",
+   "checkedDate": "2026-11-11",
+   "foundDate": "2026-11-11"
+  },
+  {
+   "id": "wife-projectcomma-youtube-channel-pd",
+   "person": "wife",
+   "title": "100만 대형 유튜브 채널 제작 PD",
+   "company": "프로젝트콤마",
+   "url": "https://www.wanted.co.kr/wd/394252",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 경력 3~6년",
+   "status": "open",
+   "checkedDate": "2026-11-11",
+   "foundDate": "2026-11-11"
   }
  ]
 }
