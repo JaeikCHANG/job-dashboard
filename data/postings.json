@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-12T08:16:00+09:00",
+ "lastUpdated": "2026-11-12T23:40:00+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1015,6 +1015,45 @@
    "status": "open",
    "checkedDate": "2026-11-11",
    "foundDate": "2026-11-11"
+  },
+  {
+   "id": "wife-novellastudio-ai-drama-creator",
+   "person": "wife",
+   "title": "여성향 AI 드라마 크리에이터 (생성형AI 영상 제작)",
+   "company": "노벨라스튜디오",
+   "url": "https://www.wanted.co.kr/wd/387060",
+   "deadline": null,
+   "source": "원티드",
+   "note": "PD 직함은 아니나 생성형AI(Higgsfield/Kling/Runway 등) 영상 생성·편집 업무로 AI콘텐츠 숏폼형 PD 직무와 매칭. 상시채용",
+   "status": "open",
+   "checkedDate": "2026-11-12",
+   "foundDate": "2026-11-12"
+  },
+  {
+   "id": "wife-novellastudio-ai-drama-content-pd-2",
+   "person": "wife",
+   "title": "AI 드라마 콘텐츠 PD (경력 2년 이상)",
+   "company": "노벨라스튜디오",
+   "url": "https://www.wanted.co.kr/wd/387061",
+   "deadline": null,
+   "source": "원티드",
+   "note": "상시채용 확인(원티드 active, 회사 채용페이지에도 노출)",
+   "status": "open",
+   "checkedDate": "2026-11-12",
+   "foundDate": "2026-11-12"
+  },
+  {
+   "id": "wife-vigloo-spoonlabs-ai-shortdrama-executive-producer",
+   "person": "wife",
+   "title": "[Vigloo] AI 숏드라마 Executive Producer (1년 계약직)",
+   "company": "스푼랩스(Vigloo)",
+   "url": "https://www.wanted.co.kr/wd/387264",
+   "deadline": null,
+   "source": "원티드",
+   "note": "상시채용 확인(원티드 active, 스푼랩스 채용페이지 현재 공고에도 포함)",
+   "status": "open",
+   "checkedDate": "2026-11-12",
+   "foundDate": "2026-11-12"
   }
  ]
 }
