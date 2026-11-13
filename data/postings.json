@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-12T23:40:00+09:00",
+ "lastUpdated": "2026-11-14T08:11:53+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1054,6 +1054,16 @@
    "status": "open",
    "checkedDate": "2026-11-12",
    "foundDate": "2026-11-12"
+  },
+  {
+   "id": "wife-viewscompany-youtube-content-pd",
+   "person": "wife",
+   "title": "유튜브 콘텐츠 기획/제작 PD",
+   "company": "뷰스컴퍼니",
+   "url": "https://www.wanted.co.kr/wd/395680",
+   "deadline": null,
+   "source": "원티드",
+   "foundDate": "2026-11-14"
   }
  ]
 }
