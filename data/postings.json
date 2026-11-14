@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-14T08:11:53+09:00",
+ "lastUpdated": "2026-11-14T23:30:00+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1063,6 +1063,32 @@
    "url": "https://www.wanted.co.kr/wd/395680",
    "deadline": null,
    "source": "원티드",
+   "foundDate": "2026-11-14"
+  },
+  {
+   "id": "wife-alclipworld-entertainment-branded-content-pd",
+   "person": "wife",
+   "title": "예능형 브랜디드 콘텐츠 제작 PD",
+   "company": "알클립월드",
+   "url": "https://www.wanted.co.kr/wd/367505",
+   "deadline": null,
+   "source": "원티드",
+   "note": "경력 5년 이상(검색결과 기준). 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인",
+   "status": "open",
+   "checkedDate": "2026-11-14",
+   "foundDate": "2026-11-14"
+  },
+  {
+   "id": "wife-alphabrothers-video-content-pd-junior",
+   "person": "wife",
+   "title": "영상 콘텐츠 PD (신입) - 크리에이티브본부",
+   "company": "알파브라더스",
+   "url": "https://inthiswork.com/?p=412995",
+   "deadline": null,
+   "source": "inthiswork.com",
+   "note": "본문 대부분 확인불가(truncated)로 마감일/경력조건 미확인. 신입 공고",
+   "status": "open",
+   "checkedDate": "2026-11-14",
    "foundDate": "2026-11-14"
   }
  ]
