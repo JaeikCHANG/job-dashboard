@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-14T23:30:00+09:00",
+ "lastUpdated": "2026-11-15T23:50:00+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1090,6 +1090,19 @@
    "status": "open",
    "checkedDate": "2026-11-14",
    "foundDate": "2026-11-14"
+  },
+  {
+   "id": "wife-chocoentertainment-video-content-director-pd",
+   "person": "wife",
+   "title": "영상콘텐츠 디렉터/PD",
+   "company": "초코엔터테인먼트",
+   "url": "https://www.wanted.co.kr/wd/237712",
+   "deadline": null,
+   "source": "원티드",
+   "note": "경력 2~10년, 서울 강남구 근무(회사 소개상 소재지는 서초구). 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 상시채용 추정",
+   "status": "open",
+   "checkedDate": "2026-11-15",
+   "foundDate": "2026-11-15"
   }
  ]
 }
