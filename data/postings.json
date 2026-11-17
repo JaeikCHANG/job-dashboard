@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-17T08:13:10+09:00",
+ "lastUpdated": "2026-11-18T08:12:17+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1103,6 +1103,81 @@
    "status": "open",
    "checkedDate": "2026-11-15",
    "foundDate": "2026-11-15"
+  },
+  {
+   "id": "me-seoulyeongmun-elementary-athletics-coach",
+   "person": "me",
+   "title": "학교운동부지도자(육상부 코치) 결원 대체 기간제 근로자 채용",
+   "company": "서울영문초등학교",
+   "url": "https://work.sen.go.kr/work/search/recInfo/BD_selectRecDetail.do?q_rcrtSn=114770",
+   "deadline": "2026-11-19",
+   "source": "서울교육일자리포털",
+   "foundDate": "2026-11-17"
+  },
+  {
+   "id": "wife-phent-shortform-creator-content-pd-contract",
+   "person": "wife",
+   "title": "[계약직] 숏폼 크리에이터 콘텐츠 PD (경력 1년 이상)",
+   "company": "디에이치앤드컴퍼니(PH엔터테인먼트)",
+   "url": "https://www.wanted.co.kr/wd/397023",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중으로 추정. 기존 등록된 PH엔터테인먼트 i-boss 공고와는 별개 공고(소속 크리에이터 숏폼 기획/편집 교육 담당)",
+   "status": "open",
+   "checkedDate": "2026-11-17",
+   "foundDate": "2026-11-17"
+  },
+  {
+   "id": "wife-econest-ai-drama-ad-content-planning-junior",
+   "person": "wife",
+   "title": "AI 드라마·광고·SNS 영상 기획/생성형AI 영상 제작 (신입)",
+   "company": "에코네스트에이아이",
+   "url": "https://www.wanted.co.kr/wd/376842",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중으로 추정. 신입 채용",
+   "status": "open",
+   "checkedDate": "2026-11-17",
+   "foundDate": "2026-11-17"
+  },
+  {
+   "id": "wife-ziro-video-content-production-pd-intern",
+   "person": "wife",
+   "title": "[인턴] 영상 콘텐츠 제작 PD (AI Creative, AI 아이돌 프로젝트)",
+   "company": "지로",
+   "url": "https://inthiswork.com/?p=391037",
+   "deadline": null,
+   "source": "inthiswork.com",
+   "note": "6개월 근무 후 평가에 따라 정규직 전환 가능 인턴. AI 툴 경험 불요(회사가 교육). 마감일 페이지에 명시 안 됨",
+   "status": "open",
+   "checkedDate": "2026-11-17",
+   "foundDate": "2026-11-17"
+  },
+  {
+   "id": "wife-netflix-director-production-innovation-apac",
+   "person": "wife",
+   "title": "Director, Production Innovation, Production Solutions - APAC",
+   "company": "넷플릭스코리아(Netflix)",
+   "url": "https://explore.jobs.netflix.net/careers/job/790318418736",
+   "deadline": null,
+   "source": "Netflix Careers",
+   "note": "PD 직함은 아니고 제작 운영/기술 혁신 director급 역할(Content Production Operations 부서). 상세페이지에 job_description 비어있어 자격요건 미확인",
+   "status": "open",
+   "checkedDate": "2026-11-17",
+   "foundDate": "2026-11-17"
+  },
+  {
+   "id": "wife-disney-senior-specialist-programming-2611",
+   "person": "wife",
+   "title": "Senior Specialist, Programming (Disney+ Korea 스포츠 편성/큐레이션)",
+   "company": "월트디즈니컴퍼니(The Walt Disney Company)",
+   "url": "https://www.disneycareers.com/en/job/seoul/senior-specialist-programming/391/102494204112",
+   "deadline": null,
+   "source": "Disney Careers",
+   "note": "10/27 게시, 경력 4년 이상, 한국어/영어 유창, 스포츠 콘텐츠 편성·머천다이징 담당. 기존 등록된 'Specialist, Programming'과는 별개 공고(job id 상이)",
+   "status": "open",
+   "checkedDate": "2026-11-17",
+   "foundDate": "2026-11-17"
   }
  ]
 }
