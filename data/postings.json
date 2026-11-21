@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-21T08:17:12+09:00",
+ "lastUpdated": "2026-11-21T23:40:00+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1191,6 +1191,58 @@
    "status": "open",
    "checkedDate": "2026-11-20",
    "foundDate": "2026-11-20"
+  },
+  {
+   "id": "wife-zplot-youtube-content-pd",
+   "person": "wife",
+   "title": "유튜브 콘텐츠 기획·제작 PD",
+   "company": "지플롯",
+   "url": "https://www.wanted.co.kr/wd/399012",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중 추정",
+   "status": "open",
+   "checkedDate": "2026-11-21",
+   "foundDate": "2026-11-21"
+  },
+  {
+   "id": "wife-digitaldime-video-content-pd",
+   "person": "wife",
+   "title": "영상 콘텐츠 제작 PD (경력 3년 이상)",
+   "company": "디지털다임",
+   "url": "https://www.wanted.co.kr/wd/378992",
+   "deadline": null,
+   "source": "원티드",
+   "note": "AI 콘텐츠 PD 키워드(생성형AI 영상 제작) 검색에서 발견. 광고대행사 제작PD. 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인",
+   "status": "open",
+   "checkedDate": "2026-11-21",
+   "foundDate": "2026-11-21"
+  },
+  {
+   "id": "wife-bmymarketer-content-marketer-pd",
+   "person": "wife",
+   "title": "콘텐츠 마케터 PD",
+   "company": "비마이마케터",
+   "url": "https://www.wanted.co.kr/wd/353624",
+   "deadline": null,
+   "source": "원티드",
+   "note": "기존 등록된 비마이마케터 '숏폼제작 PD'(wd/371266)와는 별개 공고. 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인",
+   "status": "open",
+   "checkedDate": "2026-11-21",
+   "foundDate": "2026-11-21"
+  },
+  {
+   "id": "wife-spotv-golf-digital-content-pd",
+   "person": "wife",
+   "title": "골프전략기획팀 디지털 콘텐츠 PD",
+   "company": "스포티비(SPOTV)",
+   "url": "https://www.wanted.co.kr/wd/377502",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중 추정",
+   "status": "open",
+   "checkedDate": "2026-11-21",
+   "foundDate": "2026-11-21"
   }
  ]
 }
