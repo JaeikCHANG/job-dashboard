@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-23T08:11:00+09:00",
+ "lastUpdated": "2026-11-24T08:12:54+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1256,6 +1256,32 @@
    "status": "open",
    "checkedDate": "2026-11-23",
    "foundDate": "2026-11-23"
+  },
+  {
+   "id": "wife-hybe-abd-artist-content-marketing-sr",
+   "person": "wife",
+   "title": "[ABD] 아티스트 콘텐츠 마케팅(영상 콘텐츠 담당) Sr.",
+   "company": "ABD (HYBE)",
+   "url": "https://careers.hybecorp.com/ko/o/245263",
+   "deadline": null,
+   "source": "HYBE 채용페이지",
+   "note": "수시채용(상시). 기존 등록된 ABD '아티스트 콘텐츠 마케팅(영상 콘텐츠 담당)'(o/236722)과는 별개의 Sr.급 공고",
+   "status": "open",
+   "checkedDate": "2026-11-24",
+   "foundDate": "2026-11-24"
+  },
+  {
+   "id": "wife-belift-content-outsourcing-admin",
+   "person": "wife",
+   "title": "[BELIFT LAB] 콘텐츠 외주관리/제작 행정 담당자 (계약직)",
+   "company": "BELIFT LAB (HYBE)",
+   "url": "https://careers.hybecorp.com/ko/o/240668",
+   "deadline": null,
+   "source": "HYBE 채용페이지",
+   "note": "수시채용(상시). 제작 행정/외주관리 직무",
+   "status": "open",
+   "checkedDate": "2026-11-24",
+   "foundDate": "2026-11-24"
   }
  ]
 }
