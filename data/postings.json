@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-24T08:12:54+09:00",
+ "lastUpdated": "2026-11-25T08:14:59+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1282,6 +1282,45 @@
    "status": "open",
    "checkedDate": "2026-11-24",
    "foundDate": "2026-11-24"
+  },
+  {
+   "id": "wife-disney-manager-local-content-acquisition",
+   "person": "wife",
+   "title": "Manager/Associate Manager, Local Content(s) / Content Acquisition (Disney+ Korea Originals)",
+   "company": "월트디즈니컴퍼니(The Walt Disney Company)",
+   "url": "https://www.wanted.co.kr/wd/363346",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중 추정. disneycareers.com 동일 직무 공고 2건은 404(삭제/마감 추정). 1순위 티어",
+   "status": "open",
+   "checkedDate": "2026-11-25",
+   "foundDate": "2026-11-25"
+  },
+  {
+   "id": "wife-disney-plus-korea-originals-team",
+   "person": "wife",
+   "title": "Disney+ Korea Originals 팀 포지션",
+   "company": "월트디즈니컴퍼니(The Walt Disney Company)",
+   "url": "https://www.wanted.co.kr/wd/395461",
+   "deadline": null,
+   "source": "원티드",
+   "note": "원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 검색결과 기준 모집중 추정. APAC/글로벌팀과 한국 오리지널 라인업 구축 역할. 1순위 티어",
+   "status": "open",
+   "checkedDate": "2026-11-25",
+   "foundDate": "2026-11-25"
+  },
+  {
+   "id": "wife-vigloo-spoonlabs-shortdrama-planning-pd-linkareer",
+   "person": "wife",
+   "title": "[Vigloo] 숏드라마 기획 PD (경력무관/6개월 계약직)",
+   "company": "스푼랩스(Vigloo)",
+   "url": "https://linkareer.com/activity/343750",
+   "deadline": null,
+   "source": "링커리어",
+   "note": "채용시 마감(상시) 표기, 접수시작 2026-08-18. 기존 등록된 동일 제목의 스푼랩스 채용페이지 공고(career.spoonlabs.com/ko/o/233135, 삭제됨)와 같은 역할이 링커리어에 재게시된 것으로 추정. 2순위 티어",
+   "status": "open",
+   "checkedDate": "2026-11-25",
+   "foundDate": "2026-11-25"
   }
  ]
 }
