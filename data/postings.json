@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-25T08:14:59+09:00",
+ "lastUpdated": "2026-11-26T08:18:01+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1321,6 +1321,58 @@
    "status": "open",
    "checkedDate": "2026-11-25",
    "foundDate": "2026-11-25"
+  },
+  {
+   "id": "wife-hybe-bighitmusic-production-coordinator-txt",
+   "person": "wife",
+   "title": "프로덕션 코디네이터 (TXT 담당)",
+   "company": "BIGHIT MUSIC (HYBE)",
+   "url": "https://careers.hybecorp.com/ko/o/242922",
+   "deadline": null,
+   "source": "HYBE 채용페이지",
+   "note": "경력 3-10년, 포트폴리오 필요. 영상 제작/PD 업무와 인접한 프로덕션 코디네이터 역할",
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "foundDate": "2026-11-26"
+  },
+  {
+   "id": "wife-hybe-pledis-artist-production-team-lead-svt",
+   "person": "wife",
+   "title": "아티스트 제작팀장 (SVT 담당)",
+   "company": "PLEDIS Entertainment (HYBE)",
+   "url": "https://careers.hybecorp.com/ko/o/242862",
+   "deadline": null,
+   "source": "HYBE 채용페이지",
+   "note": "경력 10년 이상, 앨범/프로젝트 기획-제작-실행 총괄 팀장급",
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "foundDate": "2026-11-26"
+  },
+  {
+   "id": "wife-hybe-pledis-photo-content-planning",
+   "person": "wife",
+   "title": "사진콘텐츠기획/제작",
+   "company": "PLEDIS Entertainment (HYBE)",
+   "url": "https://careers.hybecorp.com/ko/o/217617",
+   "deadline": null,
+   "source": "HYBE 채용페이지",
+   "note": "사진 콘텐츠 중심(영상 PD 대비 낮은 우선순위), 참고/볼륨용",
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "foundDate": "2026-11-26"
+  },
+  {
+   "id": "wife-hybe-beliftlab-photo-content-planning",
+   "person": "wife",
+   "title": "콘텐츠기획(사진콘텐츠제작)",
+   "company": "BELIFT LAB (HYBE)",
+   "url": "https://careers.hybecorp.com/ko/o/200216",
+   "deadline": null,
+   "source": "HYBE 채용페이지",
+   "note": "사진 콘텐츠 중심(영상 PD 대비 낮은 우선순위), 참고/볼륨용",
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "foundDate": "2026-11-26"
   }
  ]
 }
