@@ -186,6 +186,14 @@
     { key: 'kr', label: '국내 OTT·스튜디오', kw: ['티빙','TVING','웨이브','Wavve','CJ ENM','스튜디오드래곤','Studio Dragon','스튜디오지니','KT스튜디오지니','카카오엔터','NAVER WEBTOON','네이버웹툰','키다리','레진','리디','RIDI','스푼랩스','Vigloo','비글루','Playlist','플레이리스트','SLL','JTBC','NEW','쇼박스','롯데컬처웍스','HYBE','하이브','쿠팡플레이','KBS','MBC','SBS'] },
     { key: 'hh', label: '헤드헌팅', kw: ['엔터웨이','유니코써치','커리어케어','피플케어','Robert Walters','Michael Page','Hays','헤드헌팅'] }
   ];
+  // 1순위: AI·중국계 기술, 글로벌 OTT·스튜디오, 국내 대기업 계열 (적합도 50 미만은 제외)
+  var PRIORITY_MIN_FIT = 50;
+  var BIG_KR = ['CJ','씨제이','티빙','TVING','스튜디오드래곤','Studio Dragon','네이버','NAVER','카카오','Kakao','쿠팡','Coupang','하이브','HYBE','삼성','Samsung','LG','SK','현대','Hyundai','롯데','KT','JTBC','SLL','신세계','CJ ENM'];
+  function isPriority(raw, group) {
+    if (group && (group.key === 'ai' || group.key === 'global')) return true;
+    var c = raw.company || '';
+    return BIG_KR.some(function (k) { return c.indexOf(k) !== -1; });
+  }
   function groupOf(raw) {
     var hay = (raw.company || '') + ' ' + (raw.title || '');
     for (var i = 0; i < GROUPS.length; i++)
@@ -243,7 +251,7 @@
 
   // ---------- 데이터 ----------
   var discovered = [], companies = { companies: [], trends: [] }, meta = null;
-  var tab = 'recommend', sub = 'all', expanded = false;
+  var tab = 'priority', sub = 'all', expanded = false;
 
   function getOv(id) { return overrides[id] || { status: '지원 전', dismissed: false }; }
   function setOv(id, patch) { var o = getOv(id); for (var k in patch) o[k] = patch[k]; overrides[id] = o; }
@@ -278,6 +286,8 @@
     it.fit = typeof raw.fitScore === 'number' ? raw.fitScore : null;
     it.notRecommended = raw.recommend === false || raw.recommend === 'no';
     it.interest = isInterest(raw.company);
+    it.priority = isPriority(raw, it.group);
+    it.tier = (it.priority && (it.fit === null || it.fit >= PRIORITY_MIN_FIT)) ? 0 : 1;
     return it;
   }
   function isInterest(company) {
@@ -299,10 +309,22 @@
     });
   }
 
+  function sortPriority(list) {
+    return list.sort(function (a, b) {
+      if (a.tier !== b.tier) return a.tier - b.tier;
+      var fa = a.fit === null ? -1 : a.fit, fb = b.fit === null ? -1 : b.fit;
+      if (fa !== fb) return fb - fa;
+      if (a.dday.sort !== b.dday.sort) return a.dday.sort - b.dday.sort;
+      return (b.raw.foundDate || '').localeCompare(a.raw.foundDate || '');
+    });
+  }
+
   // ---------- 탭 정의 ----------
   var TABS = [
+    { key: 'priority', label: '우선 공고', desc: '모집 중이고 추천 대상인 공고 전체. 1순위 기업(AI·중국계, 글로벌 OTT·스튜디오, 국내 대기업 계열, 적합도 ' + PRIORITY_MIN_FIT + ' 이상) → 적합도 → 마감 임박 순입니다. 공식 채용페이지로 확인되지 않은 공고는 "확인 필요" 탭에 있습니다.',
+      pick: function (L) { return L.filter(function (it) { return !it.closed && !it.userClosed && !it.notRecommended && !it.applied && !it.needsCheck; }); }, sort: sortPriority },
     { key: 'recommend', label: '신규 추천', desc: '최근 ' + NEW_DAYS + '일 안에 새로 찾은 모집 중 공고 중 비추천이 아닌 것. 적합도가 높은 순서입니다.',
-      pick: function (L) { return L.filter(function (it) { return it.isNew && !it.closed && !it.userClosed && !it.notRecommended && !it.applied; }); } },
+      pick: function (L) { return L.filter(function (it) { return it.isNew && !it.closed && !it.userClosed && !it.notRecommended && !it.applied && !it.needsCheck; }); } },
     { key: 'open', label: '지원 가능', desc: '지금 모집 중인 공고 전체입니다.',
       pick: function (L) { return L.filter(function (it) { return !it.closed && !it.userClosed && it.state !== 'unreachable' && it.state !== 'check'; }); }, subs: true },
     { key: 'soon', label: '마감 임박', desc: SOON_DAYS + '일 안에 마감되는 공고입니다.',
@@ -339,6 +361,7 @@
 
     var appliedN = apps.filter(function (a) { return APPLIED.indexOf(a.status) !== -1 && a.status !== '불합격'; }).length;
     document.getElementById('stats').innerHTML =
+      '<div class="stat"><b>' + counts.priority + '</b>건 우선 공고</div>' +
       '<div class="stat new"><b>' + counts.recommend + '</b>건 신규 추천</div>' +
       '<div class="stat"><b>' + counts.open + '</b>건 지원 가능</div>' +
       '<div class="stat hot"><b>' + counts.soon + '</b>건 마감 임박</div>' +
@@ -363,7 +386,7 @@
 
     var list;
     if (tab === 'interest') { renderInterestEditor(subEl); list = L.filter(function (it) { return it.interest; }); list = sortItems(list.filter(function (it) { return !it.closed; })).concat(list.filter(function (it) { return it.closed; })); }
-    else { list = sortItems(cur.pick(L)); }
+    else { list = (cur.sort || sortItems)(cur.pick(L)); }
 
     if (cur.subs) {
       SUBS.forEach(function (s) {
@@ -419,6 +442,7 @@
     if (it.fit !== null) meta2.appendChild(el('span', 'badge ' + (it.fit >= 80 ? 'bad' : it.fit >= 60 ? 'purple' : 'plain'), '적합도 ' + it.fit));
     if (raw.feasibility) meta2.appendChild(el('span', 'badge blue', '지원 가능성 ' + raw.feasibility));
     if (it.group && it.fit === null) meta2.appendChild(el('span', 'badge purple', it.group.label));
+    if (it.tier === 0 && !it.closed) meta2.appendChild(el('span', 'badge bad', '1순위'));
     if (it.isNew && !it.closed) meta2.appendChild(el('span', 'badge new', '신규'));
     if (it.applied || (it.status !== '지원 전' && it.status !== '관심없음')) meta2.appendChild(el('span', 'badge blue', it.status));
     if (raw.source) meta2.appendChild(el('span', 'badge plain', raw.source));

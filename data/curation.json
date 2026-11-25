@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-25T11:30:00+09:00",
+ "lastUpdated": "2026-11-25T11:50:00+09:00",
  "note": "수동 검증·적합도 보강 데이터. postings.json 위에 덮어 표시됨(같은 id면 이 값 우선). 개인정보 없음.",
  "overrides": {
   "wife-hybe-pledis-video-content-planning": {
@@ -450,7 +450,7 @@
    "company": "CJ ENM",
    "url": "https://www.bzpp.co.kr/biz/businessDetailView/BR260917A00352",
    "deadline": null,
-   "status": "open",
+   "status": "closed",
    "foundDate": "2026-11-25",
    "checkedDate": "2026-11-25",
    "source": "비즈니스피플 / 직행",
@@ -470,7 +470,7 @@
    "feasibility": "중",
    "recommend": true,
    "fitReason": "AI 영상 제작 파이프라인·생성형 AI 신규 포맷 — AI 숏드라마 제작 총괄 경험과 일치. 영화·드라마 VFX/CGI 슈퍼바이징 경험 요구는 약점, 1분 이상 AI 영상 포트폴리오 필수",
-   "note": "9/16 게시, 채용 시 마감. CJ 채용 사이트(recruit.cj.net)에서 원 공고 확인 권장"
+   "note": "공식 채용페이지(recruit.cj.net) 마감 확인(사용자 직접 확인, 11/25). 비즈니스피플·직행 등 플랫폼에는 계속 게시 중"
   },
   {
    "id": "wife-tiktok-live-creator-operation-manager-kr",
