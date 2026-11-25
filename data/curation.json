@@ -1,0 +1,495 @@
+{
+ "lastUpdated": "2026-11-25T11:30:00+09:00",
+ "note": "수동 검증·적합도 보강 데이터. postings.json 위에 덮어 표시됨(같은 id면 이 값 우선). 개인정보 없음.",
+ "overrides": {
+  "wife-hybe-pledis-video-content-planning": {
+   "fitScore": 40,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "아이돌 영상 실무 중심, CP 경력 대비 직급 낮음"
+  },
+  "wife-hybe-koz-content-production-pm": {
+   "fitScore": 50,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "콘텐츠 제작 PM으로 제작 관리 경험 활용 가능, 다만 K-pop 아티스트 콘텐츠 중심"
+  },
+  "wife-hybe-bighit-content-planning-jr-cortis": {
+   "fitScore": 20,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "Jr. 직급 공고"
+  },
+  "wife-vigloo-spoonlabs-ai-shortdrama-production-pd": {
+   "fitScore": 60,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "AI 숏드라마 제작과 직접 일치, 단 1년 계약직·실무급"
+  },
+  "wife-mopacstudio-planning-pd": {
+   "fitScore": 55,
+   "feasibility": "하",
+   "recommend": true,
+   "fitReason": "기획PD 리더급, 필수 10년 이상이라 9년 경력은 경계선"
+  },
+  "wife-hybe-bighitmusic-content-planning-bts": {
+   "fitScore": 35,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "아티스트 영상 기획 실무, 경력 방향과 거리"
+  },
+  "wife-hybe-bighitmusic-content-planning-cortis": {
+   "fitScore": 35,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "아티스트 영상 기획 실무, 경력 방향과 거리"
+  },
+  "wife-netflix-production-management-senior-manager": {
+   "status": "closed",
+   "note": "넷플릭스 페이지 접속 실패, 11/14 서울 공고 목록에 없음(마감 추정)",
+   "checkedDate": "2026-11-25"
+  },
+  "wife-vigloo-spoonlabs-ai-video-creator": {
+   "fitScore": 40,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 영상 생성 실무자 포지션, CP 경력 대비 하향"
+  },
+  "wife-kstdlezhin-ai-video-editing-directing": {
+   "fitScore": 35,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 영상 편집 실무(1년 이상), 직급 하향"
+  },
+  "wife-kstdlezhin-ai-video-generation": {
+   "fitScore": 35,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 영상 생성 실무(1년 이상), 직급 하향"
+  },
+  "wife-lezhin-shortdrama-service-planning": {
+   "fitScore": 50,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "숏드라마 플랫폼 서비스 기획, 콘텐츠 이해는 강점이나 서비스기획 경력은 약함"
+  },
+  "wife-kstdlezhin-ip-video-production-planning": {
+   "fitScore": 75,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "웹툰 IP 영상화 기획·제작, 경력 5년+ 충족, IP 검토·숏드라마 제작 경험과 직접 일치"
+  },
+  "wife-hybe-sourcemusic-video-content-production": {
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "아티스트 영상 제작 실무"
+  },
+  "wife-hybe-belift-marketing-video-content-planning": {
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "마케팅 영상 실무"
+  },
+  "wife-hybe-belift-marketing-video-content-planning-sr": {
+   "fitScore": 40,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "마케팅 영상 Sr., 제작 총괄 경력과 방향 다름"
+  },
+  "wife-hybe-abd-artist-content-marketing": {
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "아티스트 마케팅 영상 실무"
+  },
+  "wife-hybe-bighitmusic-production-pm-cortis": {
+   "fitScore": 45,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "제작 PM, 제작 관리 경험 활용 가능하나 아이돌 콘텐츠 중심"
+  },
+  "wife-ridi-webnovel-pd-group-lead": {
+   "fitScore": 45,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "리더급이나 웹소설 편집 분야로 영상 제작과 거리"
+  },
+  "wife-235-ai-commerce-video-pd": {
+   "fitScore": 35,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "커머스 AI 영상 실무"
+  },
+  "wife-beforeafterlab-cosmetics-content-creator-pd": {
+   "fitScore": 20,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "광고·퍼포먼스 영상 실무"
+  },
+  "wife-hybe-bighitmusic-video-content-editing-txt": {
+   "fitScore": 20,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "영상 편집 실무"
+  },
+  "wife-hybe-bighitmusic-artist-content-production-txt": {
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "아티스트 영상 제작 실무"
+  },
+  "wife-witu-ai-shortform-content-pd": {
+   "fitScore": 40,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 숏폼 PD 실무급"
+  },
+  "wife-witu-shortform-content-planner": {
+   "fitScore": 30,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "숏폼 기획 실무"
+  },
+  "wife-enternext-ai-video-creator-shortdrama": {
+   "fitScore": 45,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 숏드라마 관련이나 크리에이터(실무) 포지션"
+  },
+  "wife-metacomedy-content-production-pd": {
+   "fitScore": 35,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "코미디 유튜브 제작 실무"
+  },
+  "wife-enterwaypartners-ai-content-production-pd": {
+   "status": "closed",
+   "deadline": "2026-11-06",
+   "note": "인크루트 확인 결과 11/6 마감",
+   "checkedDate": "2026-11-25"
+  },
+  "wife-disney-manager-local-content-2610": {
+   "fitScore": 45,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "10/2 같은 직무 서류 탈락. 필수: 대형 스튜디오·OTT 시리즈 개발·제작 8~10년"
+  },
+  "wife-disney-specialist-programming-2610": {
+   "fitScore": 55,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "디즈니+ 편성·큐레이션, 요건(2년+) 충족. 직급이 낮아 연봉 하락 가능"
+  },
+  "wife-coupangplay-tvod-content-ops": {
+   "fitScore": 40,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "TVOD 콘텐츠 운영 1년 계약직, 수급 경력 일부 활용"
+  },
+  "wife-netflix-genai-integration-manager-production": {
+   "fitScore": 70,
+   "feasibility": "하",
+   "recommend": true,
+   "fitReason": "AI 숏드라마 제작 총괄과 직결. 필수 제작 10년+·AI 툴 실무 요구로 도전 지원"
+  },
+  "wife-netty-ai-drama-pd-intern": {
+   "fitScore": 10,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "인턴 공고"
+  },
+  "wife-ktstudiogenie-film-business-team": {
+   "fitScore": 50,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "영화 배급 3년+ 요건 충족, 단 계약직·실무 운영 중심",
+   "title": "영화 배급 담당 (계약직, 경력 3년 이상)",
+   "checkedDate": "2026-11-25",
+   "note": "원티드 API로 모집 중 확인"
+  },
+  "wife-kwosi-content-pd": {
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "콘텐츠 PD 실무"
+  },
+  "wife-mym-entertainment-program-pd": {
+   "fitScore": 45,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "프로그램 기획·편성 경력직, 11/26 마감"
+  },
+  "wife-madeon-ai-content-producer": {
+   "fitScore": 60,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "AI 콘텐츠 프로듀서, 생성형 AI 영상 제작 경험 활용"
+  },
+  "wife-limandco-ai-motion-video-pd": {
+   "fitScore": 30,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "모션그래픽·AI 영상 실무"
+  },
+  "wife-phent-ai-first-content-pd": {
+   "fitScore": 30,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "경력 1~5년 실무급"
+  },
+  "wife-bmymarketer-shortform-pd": {
+   "fitScore": 20,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "숏폼 제작 실무(1년+)"
+  },
+  "wife-nextplayer-content-pd": {
+   "fitScore": 40,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "콘텐츠 PD(4~10년), 유튜브·브랜드 콘텐츠 중심"
+  },
+  "wife-unx-ai-content-producer": {
+   "fitScore": 55,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "AI 콘텐츠 프로듀서(AI 캐릭터), 기획·프로듀싱 역량 활용"
+  },
+  "wife-morpheus-ai-content-artist": {
+   "fitScore": 25,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 아티스트 실무"
+  },
+  "wife-eostudio-cp-junior-inthiswork": {
+   "fitScore": 10,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "신입 공고"
+  },
+  "wife-reconlabs-shortdrama-producer": {
+   "fitScore": 55,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "AI 숏드라마 시리즈 프로듀서, 직무 일치. 단 1~5년 계약직"
+  },
+  "wife-nextplayer-brand-content-pd": {
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "브랜드 콘텐츠 PD 실무"
+  },
+  "wife-blackpaper-jonathan-channel-pd": {
+   "fitScore": 20,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "3~4년차 채널 PD"
+  },
+  "wife-studiooverlap-mimimnu-content-pd-lead": {
+   "fitScore": 40,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "유튜브 채널 팀장, 영화·드라마 제작 경력과 방향 다름"
+  },
+  "wife-projectcomma-youtube-channel-pd": {
+   "fitScore": 25,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "유튜브 채널 PD 3~6년"
+  },
+  "wife-novellastudio-ai-drama-creator": {
+   "fitScore": 40,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 드라마 크리에이터 실무"
+  },
+  "wife-novellastudio-ai-drama-content-pd-2": {
+   "fitScore": 60,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "AI 드라마 콘텐츠 PD, AI 숏드라마 제작 경험과 일치. 직급은 실무급"
+  },
+  "wife-vigloo-spoonlabs-ai-shortdrama-executive-producer": {
+   "fitScore": 70,
+   "feasibility": "상",
+   "recommend": true,
+   "fitReason": "AI 숏드라마 제작 총괄 역할, 중국어·영어 우대와 일치. 단 1년 계약직",
+   "checkedDate": "2026-11-25",
+   "note": "원티드 API로 모집 중 확인"
+  },
+  "wife-viewscompany-youtube-content-pd": {
+   "status": "open",
+   "fitScore": 25,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "유튜브 PD 실무"
+  },
+  "wife-alclipworld-entertainment-branded-content-pd": {
+   "fitScore": 35,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "예능형 브랜디드 콘텐츠 PD"
+  },
+  "wife-alphabrothers-video-content-pd-junior": {
+   "fitScore": 10,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "신입 공고"
+  },
+  "wife-chocoentertainment-video-content-director-pd": {
+   "fitScore": 35,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "영상 디렉터/PD 실무"
+  },
+  "wife-phent-shortform-creator-content-pd-contract": {
+   "fitScore": 20,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "계약직 숏폼 실무"
+  },
+  "wife-econest-ai-drama-ad-content-planning-junior": {
+   "fitScore": 10,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "신입 공고"
+  },
+  "wife-ziro-video-content-production-pd-intern": {
+   "fitScore": 10,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "인턴 공고"
+  },
+  "wife-netflix-director-production-innovation-apac": {
+   "fitScore": 50,
+   "feasibility": "하",
+   "recommend": true,
+   "fitReason": "제작 혁신(AI 포함) 디렉터급, 팀 관리·대형 제작 경력 요구 예상, 요건 미확인"
+  },
+  "wife-disney-senior-specialist-programming-2611": {
+   "fitScore": 65,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "요건(4년+, 한·영 유창) 충족. 스포츠 편성 중심이라 콘텐츠 연관성은 중간"
+  },
+  "wife-zplot-youtube-content-pd": {
+   "fitScore": 25,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "유튜브 PD 실무"
+  },
+  "wife-digitaldime-video-content-pd": {
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "광고대행사 제작 PD"
+  },
+  "wife-bmymarketer-content-marketer-pd": {
+   "fitScore": 15,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "마케터 PD 실무"
+  },
+  "wife-spotv-golf-digital-content-pd": {
+   "fitScore": 25,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "스포츠 디지털 콘텐츠 실무"
+  },
+  "wife-ziro-dropshot-ai-creative-pd": {
+   "fitScore": 45,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "AI 가상 아이돌 콘텐츠 PD, 실무급"
+  },
+  "wife-hybe-abd-artist-content-marketing-sr": {
+   "fitScore": 40,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "아티스트 마케팅 Sr."
+  },
+  "wife-belift-content-outsourcing-admin": {
+   "fitScore": 35,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "외주관리·제작 행정 계약직"
+  },
+  "wife-disney-manager-local-content-acquisition": {
+   "fitScore": 60,
+   "feasibility": "하",
+   "recommend": true,
+   "fitReason": "콘텐츠 수급(Content Acquisition)이라면 라이선싱 경력과 일치. 디즈니 공식 페이지는 404, 원티드에서만 노출",
+   "status": "check",
+   "note": "공식 채용페이지 404, 원티드 상세 확인 불가 → 직접 확인 필요",
+   "checkedDate": "2026-11-25"
+  },
+  "wife-disney-plus-korea-originals-team": {
+   "fitScore": 45,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "원티드 확인 결과 Manager, Local Content(8~10년 시리즈 경력 요구)로 10/2 탈락 직무와 동일",
+   "title": "Manager, Local Content (Disney+ Korea Originals)",
+   "checkedDate": "2026-11-25"
+  },
+  "wife-vigloo-spoonlabs-shortdrama-planning-pd-linkareer": {
+   "fitScore": 30,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "경력무관 6개월 계약직",
+   "status": "check",
+   "note": "회사 원 공고는 삭제됨, 링커리어 재게시 여부 확인 필요",
+   "checkedDate": "2026-11-25"
+  }
+ },
+ "add": [
+  {
+   "id": "wife-cjenm-ai-producer",
+   "person": "wife",
+   "title": "AI Producer (경력 3년 이상)",
+   "company": "CJ ENM",
+   "url": "https://www.bzpp.co.kr/biz/businessDetailView/BR260917A00352",
+   "deadline": null,
+   "status": "open",
+   "foundDate": "2026-11-25",
+   "checkedDate": "2026-11-25",
+   "source": "비즈니스피플 / 직행",
+   "sources": [
+    {
+     "name": "비즈니스피플",
+     "url": "https://www.bzpp.co.kr/biz/businessDetailView/BR260917A00352"
+    },
+    {
+     "name": "직행",
+     "url": "https://zighang.com/recruitment/bab7f66e-f859-4ff0-8b2c-718e92a465ee"
+    }
+   ],
+   "location": "서울",
+   "employmentType": "정규직",
+   "fitScore": 75,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "AI 영상 제작 파이프라인·생성형 AI 신규 포맷 — AI 숏드라마 제작 총괄 경험과 일치. 영화·드라마 VFX/CGI 슈퍼바이징 경험 요구는 약점, 1분 이상 AI 영상 포트폴리오 필수",
+   "note": "9/16 게시, 채용 시 마감. CJ 채용 사이트(recruit.cj.net)에서 원 공고 확인 권장"
+  },
+  {
+   "id": "wife-tiktok-live-creator-operation-manager-kr",
+   "person": "wife",
+   "title": "Creator Operation Manager (South Korea) - TikTok LIVE",
+   "company": "TikTok (ByteDance)",
+   "url": "https://lifeattiktok.com/search/7395505799466354971",
+   "deadline": null,
+   "status": "open",
+   "foundDate": "2026-11-25",
+   "checkedDate": "2026-11-25",
+   "source": "TikTok 채용페이지",
+   "location": "서울",
+   "employmentType": "정규직",
+   "fitScore": 45,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "크리에이터 파트너십 업무이나 LIVE 크리에이터 영입·KPI 운영 중심으로 제작 경력과 거리. 한·영 유창 요구",
+   "note": "Job Code A256774A"
+  }
+ ]
+}

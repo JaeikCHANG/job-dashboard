@@ -1,0 +1,249 @@
+{
+ "lastUpdated": "2026-11-25T11:30:00+09:00",
+ "companies": [
+  {
+   "name": "Meitu",
+   "nameLocal": "美图",
+   "category": "중국계 AI·이미지/영상",
+   "koreaPresence": "확인 필요 (한국 시장 담당을 중국 본사에서 채용한 사례 있음)",
+   "careersUrl": "https://hr.meitu.com/en/",
+   "note": "1/30 게시 Social Media Marketing Intern (South Korea Focus, 베이징·샤먼) 확인 — 인턴이라 등록 안 함",
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "TikTok / ByteDance",
+   "nameLocal": "字节跳动",
+   "category": "중국계 플랫폼",
+   "koreaPresence": "한국 법인 있음 (서울 공고 확인)",
+   "careersUrl": "https://lifeattiktok.com/",
+   "note": "TikTok LIVE 한국 크리에이터 운영 매니저 서울 공고 확인. 숏드라마 파트너십 직무는 LA 근무",
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "CapCut / Dreamina",
+   "nameLocal": "剪映",
+   "category": "ByteDance AI 영상",
+   "koreaPresence": "확인 필요",
+   "careersUrl": "https://joinbytedance.com/",
+   "note": "서울 로컬 크리에이터 운영 공고 흔적 있으나 미확인",
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Kling AI (Kuaishou)",
+   "nameLocal": "快手 可灵",
+   "category": "중국계 AI 영상",
+   "koreaPresence": "한국 크리에이터·기업 파트너십 확대 중 (법인 여부 확인 필요)",
+   "careersUrl": "https://zhaopin.kuaishou.cn/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "MiniMax (Hailuo)",
+   "nameLocal": "稀宇科技",
+   "category": "중국계 AI 영상",
+   "koreaPresence": "확인 필요",
+   "careersUrl": "https://www.minimaxi.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "PixVerse",
+   "nameLocal": "爱诗科技",
+   "category": "중국계 AI 영상",
+   "koreaPresence": "확인 필요",
+   "careersUrl": "https://pixverse.ai/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Vidu",
+   "nameLocal": "生数科技",
+   "category": "중국계 AI 영상",
+   "koreaPresence": "확인 필요",
+   "careersUrl": "https://www.vidu.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "iQIYI",
+   "nameLocal": "爱奇艺",
+   "category": "중국계 OTT",
+   "koreaPresence": "한국 작품 협업 이력 (아내 경력: 선배님·당신의 입술)",
+   "careersUrl": "https://careers.iqiyi.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Tencent",
+   "nameLocal": "腾讯",
+   "category": "중국계 플랫폼",
+   "koreaPresence": "한국 사무소 있음 (확인 필요)",
+   "careersUrl": "https://careers.tencent.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Alibaba",
+   "nameLocal": "阿里巴巴",
+   "category": "중국계 플랫폼",
+   "koreaPresence": "한국 지사 있음 (확인 필요)",
+   "careersUrl": "https://talent.alibaba.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Chinese Online",
+   "nameLocal": "中文在线",
+   "category": "중국계 IP·숏드라마",
+   "koreaPresence": "확인 필요",
+   "careersUrl": null,
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "DramaBox",
+   "nameLocal": "点众科技",
+   "category": "숏드라마 플랫폼",
+   "koreaPresence": "확인 필요",
+   "careersUrl": "https://www.dramaboxdb.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "ReelShort (Crazy Maple)",
+   "nameLocal": "",
+   "category": "숏드라마 플랫폼",
+   "koreaPresence": "한국 쇼박스와 공동제작 계약(2026.06)",
+   "careersUrl": "https://www.crazymaplestudios.com/careers",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "HoYoverse",
+   "nameLocal": "米哈游",
+   "category": "게임 IP",
+   "koreaPresence": "한국 지사 있음",
+   "careersUrl": "https://hoyoverse.com/en-us/careers",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "NetEase",
+   "nameLocal": "网易",
+   "category": "게임 IP",
+   "koreaPresence": "한국 지사 있음 (확인 필요)",
+   "careersUrl": "https://hr.163.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Xiaohongshu",
+   "nameLocal": "小红书",
+   "category": "중국계 플랫폼",
+   "koreaPresence": "확인 필요",
+   "careersUrl": "https://job.xiaohongshu.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Bilibili",
+   "nameLocal": "哔哩哔哩",
+   "category": "중국계 플랫폼",
+   "koreaPresence": "확인 필요",
+   "careersUrl": "https://jobs.bilibili.com/",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "CJ ENM",
+   "nameLocal": "",
+   "category": "국내 콘텐츠",
+   "koreaPresence": "본사",
+   "careersUrl": "https://recruit.cj.net/",
+   "note": "AI Producer 상시 채용 중(9/16 게시)",
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Netflix",
+   "nameLocal": "",
+   "category": "글로벌 OTT",
+   "koreaPresence": "한국 법인",
+   "careersUrl": "https://explore.jobs.netflix.net/careers?location=Seoul%2C+Korea%2C+Republic+of",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "Disney",
+   "nameLocal": "",
+   "category": "글로벌 OTT",
+   "koreaPresence": "한국 법인",
+   "careersUrl": "https://www.disneycareers.com/en/search-jobs/Seoul",
+   "note": null,
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  },
+  {
+   "name": "엔터웨이파트너스",
+   "nameLocal": "",
+   "category": "헤드헌팅",
+   "koreaPresence": "국내",
+   "careersUrl": "https://www.enterwaypartners.com/",
+   "note": "AI 콘텐츠 제작·프로듀싱 공고는 11/6 마감 — 헤드헌터에 직접 문의 권장",
+   "addedDate": "2026-11-25",
+   "source": "초기 모니터링 목록"
+  }
+ ],
+ "trends": [
+  {
+   "date": "2026-04-02",
+   "company": "TikTok",
+   "title": "TikTok, 한국을 글로벌 콘텐츠 허브로 5천만 달러 투자",
+   "url": "https://www.koreaherald.com/article/10708708",
+   "type": "투자",
+   "summary": "한국어 크리에이터 보상 2배 프로그램과 전문 콘텐츠 공급사 파트너십 포함"
+  },
+  {
+   "date": "2026-06-01",
+   "company": "ReelShort",
+   "title": "ReelShort, 쇼박스와 한국 숏드라마 공동제작 계약",
+   "url": "https://variety.com/2026/tv/news/showbox-reelshort-korean-microdrama-coproduction-1236781210/",
+   "type": "파트너십",
+   "summary": "한국 오리지널 숏드라마 공동 개발 (날짜는 6월 보도 기준, 확인 필요)"
+  },
+  {
+   "date": "2026-07-09",
+   "company": "Kling AI (Kuaishou)",
+   "title": "Kling AI, 한국 크리에이터·기업 파트너십 확대",
+   "url": "https://www.digitaltoday.co.kr/en/view/79907/quality-and-detail-to-lead-global-video-ai-and-expand-korean-content-ecosystem",
+   "type": "진출",
+   "summary": "사용자 1억 명 이상(70% 중국 외), 한국 기업 API 도입·크리에이터 협력 확대"
+  },
+  {
+   "date": "2026-07-13",
+   "company": "PixVerse",
+   "title": "PixVerse, 4억 3,900만 달러 투자 유치",
+   "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
+   "type": "투자",
+   "summary": "기업가치 20억 달러 이상. 해외 사업 확대 단계라 한국 담당 채용 가능성 모니터링"
+  }
+ ]
+}

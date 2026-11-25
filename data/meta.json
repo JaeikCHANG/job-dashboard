@@ -1,0 +1,49 @@
+{
+ "lastRun": "2026-11-25T11:30:00+09:00",
+ "by": "수동 점검(Claude)",
+ "sources": [
+  {
+   "name": "원티드 API",
+   "ok": true,
+   "lastSuccess": "2026-11-25",
+   "note": "일부 공고 robots 차단"
+  },
+  {
+   "name": "TikTok 채용페이지",
+   "ok": true,
+   "lastSuccess": "2026-11-25"
+  },
+  {
+   "name": "인크루트",
+   "ok": true,
+   "lastSuccess": "2026-11-25"
+  },
+  {
+   "name": "Disney Careers",
+   "ok": true,
+   "lastSuccess": "2026-11-14",
+   "note": "일부 공고 404"
+  },
+  {
+   "name": "Netflix Careers",
+   "ok": true,
+   "lastSuccess": "2026-11-14",
+   "note": "상세 자격요건 잘림"
+  },
+  {
+   "name": "필름메이커스",
+   "ok": false,
+   "note": "robots 차단"
+  },
+  {
+   "name": "BOSS直聘·猎聘",
+   "ok": false,
+   "note": "로그인 필요, 미수집"
+  },
+  {
+   "name": "LinkedIn",
+   "ok": false,
+   "note": "로그인 필요, 미수집"
+  }
+ ]
+}
