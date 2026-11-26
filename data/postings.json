@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-26T08:18:01+09:00",
+ "lastUpdated": "2026-11-26T23:30:00+09:00",
  "items": [
   {
    "id": "wife-kinolights-youtube-pd-marketer",
@@ -1370,6 +1370,19 @@
    "deadline": null,
    "source": "HYBE 채용페이지",
    "note": "사진 콘텐츠 중심(영상 PD 대비 낮은 우선순위), 참고/볼륨용",
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "foundDate": "2026-11-26"
+  },
+  {
+   "id": "wife-mel-ai-content-pd",
+   "person": "wife",
+   "title": "AI 콘텐츠 PD",
+   "company": "Mel",
+   "url": "https://www.wanted.co.kr/wd/398096",
+   "deadline": null,
+   "source": "원티드",
+   "note": "AI 콘텐츠 PD 키워드 검색. 하이퍼커넥트 아자르(Azar) 창업자 등이 재창업한 AI 영상통화 소셜 플랫폼 스타트업. AI 캐릭터의 외모·성격·말투·스토리 기획 및 생성형AI 이미지·영상 제작 업무. 원티드 상세페이지 WebFetch 차단(403)으로 마감일 미확인, 상시채용 추정",
    "status": "open",
    "checkedDate": "2026-11-26",
    "foundDate": "2026-11-26"
