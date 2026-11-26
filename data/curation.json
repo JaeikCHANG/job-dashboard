@@ -1,48 +1,63 @@
 {
- "lastUpdated": "2026-11-25T11:50:00+09:00",
+ "lastUpdated": "2026-11-26T10:05:00+09:00",
  "note": "수동 검증·적합도 보강 데이터. postings.json 위에 덮어 표시됨(같은 id면 이 값 우선). 개인정보 없음.",
  "overrides": {
   "wife-hybe-pledis-video-content-planning": {
    "fitScore": 40,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "아이돌 영상 실무 중심, CP 경력 대비 직급 낮음"
+   "fitReason": "아이돌 영상 실무 중심, CP 경력 대비 직급 낮음",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-hybe-koz-content-production-pm": {
    "fitScore": 50,
    "feasibility": "중",
    "recommend": true,
-   "fitReason": "콘텐츠 제작 PM으로 제작 관리 경험 활용 가능, 다만 K-pop 아티스트 콘텐츠 중심"
+   "fitReason": "콘텐츠 제작 PM으로 제작 관리 경험 활용 가능, 다만 K-pop 아티스트 콘텐츠 중심",
+   "status": "unreachable",
+   "note": "공식 페이지 접속 오류(client_error), 마감 여부 미확인"
   },
   "wife-hybe-bighit-content-planning-jr-cortis": {
    "fitScore": 20,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "Jr. 직급 공고"
+   "fitReason": "Jr. 직급 공고",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-vigloo-spoonlabs-ai-shortdrama-production-pd": {
    "fitScore": 60,
    "feasibility": "상",
    "recommend": true,
-   "fitReason": "AI 숏드라마 제작과 직접 일치, 단 1년 계약직·실무급"
+   "fitReason": "AI 숏드라마 제작과 직접 일치, 단 1년 계약직·실무급",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-mopacstudio-planning-pd": {
    "fitScore": 55,
    "feasibility": "하",
    "recommend": true,
-   "fitReason": "기획PD 리더급, 필수 10년 이상이라 9년 경력은 경계선"
+   "fitReason": "기획PD 리더급, 필수 10년 이상이라 9년 경력은 경계선",
+   "status": "check",
+   "checkedDate": "2026-11-26",
+   "note": "공식 페이지 미확인. 씨네21 9/7 게시, 마감일 없음(60일 초과)"
   },
   "wife-hybe-bighitmusic-content-planning-bts": {
    "fitScore": 35,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "아티스트 영상 기획 실무, 경력 방향과 거리"
+   "fitReason": "아티스트 영상 기획 실무, 경력 방향과 거리",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-hybe-bighitmusic-content-planning-cortis": {
    "fitScore": 35,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "아티스트 영상 기획 실무, 경력 방향과 거리"
+   "fitReason": "아티스트 영상 기획 실무, 경력 방향과 거리",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-netflix-production-management-senior-manager": {
    "status": "closed",
@@ -53,91 +68,121 @@
    "fitScore": 40,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "AI 영상 생성 실무자 포지션, CP 경력 대비 하향"
+   "fitReason": "AI 영상 생성 실무자 포지션, CP 경력 대비 하향",
+   "status": "unreachable",
+   "note": "공식 페이지 접속 오류(client_error), 마감 여부 미확인"
   },
   "wife-kstdlezhin-ai-video-editing-directing": {
    "fitScore": 35,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "AI 영상 편집 실무(1년 이상), 직급 하향"
+   "fitReason": "AI 영상 편집 실무(1년 이상), 직급 하향",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-kstdlezhin-ai-video-generation": {
    "fitScore": 35,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "AI 영상 생성 실무(1년 이상), 직급 하향"
+   "fitReason": "AI 영상 생성 실무(1년 이상), 직급 하향",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-lezhin-shortdrama-service-planning": {
    "fitScore": 50,
    "feasibility": "중",
    "recommend": true,
-   "fitReason": "숏드라마 플랫폼 서비스 기획, 콘텐츠 이해는 강점이나 서비스기획 경력은 약함"
+   "fitReason": "숏드라마 플랫폼 서비스 기획, 콘텐츠 이해는 강점이나 서비스기획 경력은 약함",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-kstdlezhin-ip-video-production-planning": {
    "fitScore": 75,
    "feasibility": "상",
    "recommend": true,
-   "fitReason": "웹툰 IP 영상화 기획·제작, 경력 5년+ 충족, IP 검토·숏드라마 제작 경험과 직접 일치"
+   "fitReason": "웹툰 IP 영상화 기획·제작, 경력 5년+ 충족, IP 검토·숏드라마 제작 경험과 직접 일치",
+   "status": "unreachable",
+   "note": "공식 페이지 접속 오류(client_error), 마감 여부 미확인 — 직접 확인 권장"
   },
   "wife-hybe-sourcemusic-video-content-production": {
    "fitScore": 30,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "아티스트 영상 제작 실무"
+   "fitReason": "아티스트 영상 제작 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-hybe-belift-marketing-video-content-planning": {
    "fitScore": 30,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "마케팅 영상 실무"
+   "fitReason": "마케팅 영상 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-hybe-belift-marketing-video-content-planning-sr": {
    "fitScore": 40,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "마케팅 영상 Sr., 제작 총괄 경력과 방향 다름"
+   "fitReason": "마케팅 영상 Sr., 제작 총괄 경력과 방향 다름",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-hybe-abd-artist-content-marketing": {
    "fitScore": 30,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "아티스트 마케팅 영상 실무"
+   "fitReason": "아티스트 마케팅 영상 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-hybe-bighitmusic-production-pm-cortis": {
    "fitScore": 45,
    "feasibility": "중",
    "recommend": true,
-   "fitReason": "제작 PM, 제작 관리 경험 활용 가능하나 아이돌 콘텐츠 중심"
+   "fitReason": "제작 PM, 제작 관리 경험 활용 가능하나 아이돌 콘텐츠 중심",
+   "status": "unreachable",
+   "note": "공식 페이지 접속 오류(client_error), 마감 여부 미확인"
   },
   "wife-ridi-webnovel-pd-group-lead": {
    "fitScore": 45,
    "feasibility": "하",
    "recommend": false,
-   "fitReason": "리더급이나 웹소설 편집 분야로 영상 제작과 거리"
+   "fitReason": "리더급이나 웹소설 편집 분야로 영상 제작과 거리",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-235-ai-commerce-video-pd": {
    "fitScore": 35,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "커머스 AI 영상 실무"
+   "fitReason": "커머스 AI 영상 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-beforeafterlab-cosmetics-content-creator-pd": {
    "fitScore": 20,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "광고·퍼포먼스 영상 실무"
+   "fitReason": "광고·퍼포먼스 영상 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-hybe-bighitmusic-video-content-editing-txt": {
    "fitScore": 20,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "영상 편집 실무"
+   "fitReason": "영상 편집 실무",
+   "status": "unreachable",
+   "note": "공식 페이지 접속 오류(client_error), 마감 여부 미확인"
   },
   "wife-hybe-bighitmusic-artist-content-production-txt": {
    "fitScore": 30,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "아티스트 영상 제작 실무"
+   "fitReason": "아티스트 영상 제작 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-witu-ai-shortform-content-pd": {
    "fitScore": 40,
@@ -149,19 +194,25 @@
    "fitScore": 30,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "숏폼 기획 실무"
+   "fitReason": "숏폼 기획 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-enternext-ai-video-creator-shortdrama": {
    "fitScore": 45,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "AI 숏드라마 관련이나 크리에이터(실무) 포지션"
+   "fitReason": "AI 숏드라마 관련이나 크리에이터(실무) 포지션",
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가"
   },
   "wife-metacomedy-content-production-pd": {
    "fitScore": 35,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "코미디 유튜브 제작 실무"
+   "fitReason": "코미디 유튜브 제작 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-enterwaypartners-ai-content-production-pd": {
    "status": "closed",
@@ -173,31 +224,41 @@
    "fitScore": 45,
    "feasibility": "하",
    "recommend": false,
-   "fitReason": "10/2 같은 직무 서류 탈락. 필수: 대형 스튜디오·OTT 시리즈 개발·제작 8~10년"
+   "fitReason": "10/2 같은 직무 서류 탈락. 필수: 대형 스튜디오·OTT 시리즈 개발·제작 8~10년",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-disney-specialist-programming-2610": {
    "fitScore": 55,
    "feasibility": "상",
    "recommend": true,
-   "fitReason": "디즈니+ 편성·큐레이션, 요건(2년+) 충족. 직급이 낮아 연봉 하락 가능"
+   "fitReason": "디즈니+ 편성·큐레이션, 요건(2년+) 충족. 직급이 낮아 연봉 하락 가능",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-coupangplay-tvod-content-ops": {
    "fitScore": 40,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "TVOD 콘텐츠 운영 1년 계약직, 수급 경력 일부 활용"
+   "fitReason": "TVOD 콘텐츠 운영 1년 계약직, 수급 경력 일부 활용",
+   "status": "unreachable",
+   "note": "공식 페이지(coupang.jobs) 접속 오류, 마감 여부 미확인"
   },
   "wife-netflix-genai-integration-manager-production": {
    "fitScore": 70,
    "feasibility": "하",
    "recommend": true,
-   "fitReason": "AI 숏드라마 제작 총괄과 직결. 필수 제작 10년+·AI 툴 실무 요구로 도전 지원"
+   "fitReason": "AI 숏드라마 제작 총괄과 직결. 필수 제작 10년+·AI 툴 실무 요구로 도전 지원",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-netty-ai-drama-pd-intern": {
    "fitScore": 10,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "인턴 공고"
+   "fitReason": "인턴 공고",
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가"
   },
   "wife-ktstudiogenie-film-business-team": {
    "fitScore": 50,
@@ -205,26 +266,35 @@
    "recommend": true,
    "fitReason": "영화 배급 3년+ 요건 충족, 단 계약직·실무 운영 중심",
    "title": "영화 배급 담당 (계약직, 경력 3년 이상)",
-   "checkedDate": "2026-11-25",
-   "note": "원티드 API로 모집 중 확인"
+   "checkedDate": "2026-11-26",
+   "note": "원티드 API로 모집 중 확인",
+   "status": "open"
   },
   "wife-kwosi-content-pd": {
    "fitScore": 30,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "콘텐츠 PD 실무"
+   "fitReason": "콘텐츠 PD 실무",
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가"
   },
   "wife-mym-entertainment-program-pd": {
    "fitScore": 45,
    "feasibility": "중",
    "recommend": true,
-   "fitReason": "프로그램 기획·편성 경력직, 11/26 마감"
+   "fitReason": "프로그램 기획·편성 경력직, 11/26 마감",
+   "status": "check",
+   "checkedDate": "2026-11-26",
+   "note": "공식 페이지 미확인. 인크루트 마감 11/26(오늘) 23:59, 모집 중 표시"
   },
   "wife-madeon-ai-content-producer": {
    "fitScore": 60,
    "feasibility": "상",
    "recommend": true,
-   "fitReason": "AI 콘텐츠 프로듀서, 생성형 AI 영상 제작 경험 활용"
+   "fitReason": "AI 콘텐츠 프로듀서, 생성형 AI 영상 제작 경험 활용",
+   "status": "check",
+   "checkedDate": "2026-11-26",
+   "note": "공식 페이지 미확인. 리멤버에는 채용 시 마감으로 모집 중"
   },
   "wife-limandco-ai-motion-video-pd": {
    "fitScore": 30,
@@ -236,25 +306,33 @@
    "fitScore": 30,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "경력 1~5년 실무급"
+   "fitReason": "경력 1~5년 실무급",
+   "status": "unreachable",
+   "note": "i-boss 페이지 접속 오류, 마감 여부 미확인"
   },
   "wife-bmymarketer-shortform-pd": {
    "fitScore": 20,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "숏폼 제작 실무(1년+)"
+   "fitReason": "숏폼 제작 실무(1년+)",
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가"
   },
   "wife-nextplayer-content-pd": {
    "fitScore": 40,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "콘텐츠 PD(4~10년), 유튜브·브랜드 콘텐츠 중심"
+   "fitReason": "콘텐츠 PD(4~10년), 유튜브·브랜드 콘텐츠 중심",
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가"
   },
   "wife-unx-ai-content-producer": {
    "fitScore": 55,
    "feasibility": "상",
    "recommend": true,
-   "fitReason": "AI 콘텐츠 프로듀서(AI 캐릭터), 기획·프로듀싱 역량 활용"
+   "fitReason": "AI 콘텐츠 프로듀서(AI 캐릭터), 기획·프로듀싱 역량 활용",
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가"
   },
   "wife-morpheus-ai-content-artist": {
    "fitScore": 25,
@@ -266,7 +344,10 @@
    "fitScore": 10,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "신입 공고"
+   "fitReason": "신입 공고",
+   "status": "closed",
+   "checkedDate": "2026-11-26",
+   "note": "인디스워크 \"마감된 공고 혹은 비공개\""
   },
   "wife-reconlabs-shortdrama-producer": {
    "fitScore": 55,
@@ -284,7 +365,9 @@
    "fitScore": 20,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "3~4년차 채널 PD"
+   "fitReason": "3~4년차 채널 PD",
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가"
   },
   "wife-studiooverlap-mimimnu-content-pd-lead": {
    "fitScore": 40,
@@ -302,7 +385,9 @@
    "fitScore": 40,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "AI 드라마 크리에이터 실무"
+   "fitReason": "AI 드라마 크리에이터 실무",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-novellastudio-ai-drama-content-pd-2": {
    "fitScore": 60,
@@ -335,7 +420,10 @@
    "fitScore": 10,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "신입 공고"
+   "fitReason": "신입 공고",
+   "status": "check",
+   "checkedDate": "2026-11-26",
+   "note": "공식 페이지(career.alphabrothers.co.kr) 미확인. 인디스워크 마감 표시 없음"
   },
   "wife-chocoentertainment-video-content-director-pd": {
    "fitScore": 35,
@@ -359,19 +447,26 @@
    "fitScore": 10,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "인턴 공고"
+   "fitReason": "인턴 공고",
+   "status": "closed",
+   "checkedDate": "2026-11-26",
+   "note": "인디스워크 \"마감된 공고 혹은 비공개\""
   },
   "wife-netflix-director-production-innovation-apac": {
    "fitScore": 50,
    "feasibility": "하",
    "recommend": true,
-   "fitReason": "제작 혁신(AI 포함) 디렉터급, 팀 관리·대형 제작 경력 요구 예상, 요건 미확인"
+   "fitReason": "제작 혁신(AI 포함) 디렉터급, 팀 관리·대형 제작 경력 요구 예상, 요건 미확인",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-disney-senior-specialist-programming-2611": {
    "fitScore": 65,
    "feasibility": "중",
    "recommend": true,
-   "fitReason": "요건(4년+, 한·영 유창) 충족. 스포츠 편성 중심이라 콘텐츠 연관성은 중간"
+   "fitReason": "요건(4년+, 한·영 유창) 충족. 스포츠 편성 중심이라 콘텐츠 연관성은 중간",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-zplot-youtube-content-pd": {
    "fitScore": 25,
@@ -407,13 +502,17 @@
    "fitScore": 40,
    "feasibility": "중",
    "recommend": false,
-   "fitReason": "아티스트 마케팅 Sr."
+   "fitReason": "아티스트 마케팅 Sr.",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-belift-content-outsourcing-admin": {
    "fitScore": 35,
    "feasibility": "상",
    "recommend": false,
-   "fitReason": "외주관리·제작 행정 계약직"
+   "fitReason": "외주관리·제작 행정 계약직",
+   "status": "open",
+   "checkedDate": "2026-11-26"
   },
   "wife-disney-manager-local-content-acquisition": {
    "fitScore": 60,
@@ -437,9 +536,113 @@
    "feasibility": "상",
    "recommend": false,
    "fitReason": "경력무관 6개월 계약직",
+   "status": "closed",
+   "note": "링커리어 접수기간 2026.08.19~10.06 종료",
+   "checkedDate": "2026-11-26"
+  },
+  "wife-hybe-bighitmusic-production-coordinator-txt": {
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "fitScore": 30,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "뮤직비디오·사진 프로덕션 진행 실무, 음악·엔터 업계 경험 요구"
+  },
+  "wife-hybe-pledis-artist-production-team-lead-svt": {
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "fitScore": 25,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "앨범·아티스트 제작 리딩 10년+, 음악 제작 경력 필요"
+  },
+  "wife-hybe-pledis-photo-content-planning": {
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "fitScore": 10,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "사진 촬영·보정 실무 직무, 포토샵 테스트"
+  },
+  "wife-hybe-beliftlab-photo-content-planning": {
+   "status": "open",
+   "checkedDate": "2026-11-26",
+   "fitScore": 10,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "사진 촬영·리터칭 실무 직무"
+  },
+  "wife-lottecultureworks-ai-content-production-pd": {
+   "status": "unreachable",
+   "note": "원티드 API robots 차단으로 자동 확인 불가",
+   "fitScore": 55,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "대기업 계열 AI 콘텐츠 제작 PD, AI 숏드라마 제작 경험과 일치. 마감일 11/09 경과 여부 확인 필요"
+  },
+  "wife-tving-ip-content-planning-pd": {
+   "status": "closed",
+   "checkedDate": "2026-11-26",
+   "note": "공식 페이지(team.tving.com) 목록에 없음, 마감일 11/15 경과"
+  },
+  "wife-tving-ip-planning-pd": {
+   "status": "closed",
+   "checkedDate": "2026-11-26",
+   "note": "인크루트 접수 마감 11/15 경과(플랫폼은 D-day 표시 잔존)"
+  },
+  "wife-novellastudio-ai-drama-content-pd": {
+   "status": "closed",
+   "checkedDate": "2026-11-26",
+   "note": "인크루트 \"본 채용정보는 마감되었습니다\""
+  },
+  "wife-tving-global-content-acquisition": {
    "status": "check",
-   "note": "회사 원 공고는 삭제됨, 링커리어 재게시 여부 확인 필요",
-   "checkedDate": "2026-11-25"
+   "checkedDate": "2026-11-26",
+   "note": "공식 페이지 미확인. 잡코리아는 마감 2026-12-20으로 게시(기존 마감일 11/15와 다름)",
+   "sources": [
+    {
+     "name": "잡코리아",
+     "url": "https://www.jobkorea.co.kr/Recruit/GI_Read/50260095",
+     "deadline": "2026-12-20"
+    }
+   ],
+   "fitScore": 70,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "해외 콘텐츠 수급·라이선스 협상 경력과 직접 일치(5년 이상)"
+  },
+  "wife-kinolights-youtube-pd-marketer": {
+   "status": "check",
+   "checkedDate": "2026-11-26",
+   "note": "공식 페이지 미확인. 씨네21 제목에 \"~12/6\" 표기(기존 마감일 11/15와 다름)",
+   "sources": [
+    {
+     "name": "씨네21",
+     "url": "https://cine21.com/community/recruit/view/?wr_id=22772",
+     "deadline": "2026-12-06"
+    }
+   ],
+   "fitScore": 25,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "YouTube PD 직함이나 IP 마케팅 중심, CP·제작 총괄 경력과 거리"
+  },
+  "wife-namerz-video-pd-beauty-lifestyle": {
+   "status": "check",
+   "checkedDate": "2026-11-26",
+   "note": "원티드 active이나 마감일 11/15 경과",
+   "fitScore": 15,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "뷰티 브랜드 영상 실무, 경력 방향과 거리"
+  },
+  "wife-medialinked-youtube-webvariety-shortform-pd": {
+   "status": "check",
+   "note": "마감일 11/16 경과, 오늘 원티드 확인 실패",
+   "fitScore": 25,
+   "feasibility": "상",
+   "recommend": false,
+   "fitReason": "유튜브 웹예능·숏폼 실무 PD, 직급·방향 하향"
   }
  },
  "add": [
@@ -481,7 +684,7 @@
    "deadline": null,
    "status": "open",
    "foundDate": "2026-11-25",
-   "checkedDate": "2026-11-25",
+   "checkedDate": "2026-11-26",
    "source": "TikTok 채용페이지",
    "location": "서울",
    "employmentType": "정규직",
@@ -490,6 +693,60 @@
    "recommend": false,
    "fitReason": "크리에이터 파트너십 업무이나 LIVE 크리에이터 영입·KPI 운영 중심으로 제작 경력과 거리. 한·영 유창 요구",
    "note": "Job Code A256774A"
+  },
+  {
+   "id": "wife-tiktok-content-acquisition-development-manager-kr",
+   "person": "wife",
+   "title": "Manager, Content Acquisition & Development - Celebrities and Digital Originals (South Korea)",
+   "company": "TikTok (ByteDance)",
+   "url": "https://lifeattiktok.com/search/7600308397548357941",
+   "deadline": null,
+   "status": "check",
+   "foundDate": "2026-11-26",
+   "checkedDate": "2026-11-26",
+   "source": "TikTok 채용페이지 / The Muse",
+   "sources": [
+    {
+     "name": "TikTok 채용페이지",
+     "url": "https://lifeattiktok.com/search/7600308397548357941"
+    },
+    {
+     "name": "The Muse",
+     "url": "https://www.themuse.com/jobs/tiktok/manager-content-acquisition-development-celebrities-and-digital-originals-south-korea"
+    }
+   ],
+   "location": "서울",
+   "employmentType": "확인 필요",
+   "fitScore": 65,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "디지털 오리지널 콘텐츠 수급·파트너 딜 협상 — IP 거래·라이선스·공동제작 경력과 맞음. 한국 셀럽·소속사·MCN 경험(5년+) 요구는 약점",
+   "note": "공식 페이지 본문 렌더링 안 됨(공식 페이지 미확인). The Muse 기준 2026-01-29 게시, 60일 초과"
+  },
+  {
+   "id": "wife-meitu-growth-influencer-marketing-manager-kr",
+   "person": "wife",
+   "title": "Growth & Influencer Marketing Manager – Korea",
+   "company": "Meitu (美图)",
+   "url": "https://hr.meitu.com/en/jobSocial/957c8aee-995c-4c8f-aae2-cb6a83455e63",
+   "deadline": null,
+   "status": "open",
+   "foundDate": "2026-11-26",
+   "checkedDate": "2026-11-26",
+   "source": "Meitu 채용페이지",
+   "sources": [
+    {
+     "name": "Meitu 채용페이지",
+     "url": "https://hr.meitu.com/en/jobSocial/957c8aee-995c-4c8f-aae2-cb6a83455e63"
+    }
+   ],
+   "location": "한국(도시 미표기)",
+   "employmentType": "경력",
+   "fitScore": 40,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "BeautyPlus·AI 이미지 앱 한국 크리에이터·인플루언서 그로스 마케팅, 중국어 활용 가능하나 제작 경력과 방향 다름",
+   "note": "공식 페이지 Apply 버튼 확인, 2026-08-12 게시"
   }
  ]
 }

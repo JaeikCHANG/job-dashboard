@@ -1,34 +1,40 @@
 {
- "lastRun": "2026-11-25T11:30:00+09:00",
- "by": "수동 점검(Claude)",
+ "lastRun": "2026-11-26T10:05:00+09:00",
+ "by": "예약 보강(재익 계정)",
  "sources": [
   {
    "name": "원티드 API",
    "ok": true,
-   "lastSuccess": "2026-11-25",
-   "note": "일부 공고 robots 차단"
+   "lastSuccess": "2026-11-26",
+   "note": "38건 중 8건 확인, 8건 robots 차단, 22건 확인 실패(가져오기 권한 시간 초과)",
+   "lastAttempt": "2026-11-26"
   },
   {
    "name": "TikTok 채용페이지",
    "ok": true,
-   "lastSuccess": "2026-11-25"
+   "lastSuccess": "2026-11-26",
+   "lastAttempt": "2026-11-26",
+   "note": "일부 상세 본문 렌더링 안 됨"
   },
   {
    "name": "인크루트",
    "ok": true,
-   "lastSuccess": "2026-11-25"
+   "lastSuccess": "2026-11-26",
+   "lastAttempt": "2026-11-26"
   },
   {
    "name": "Disney Careers",
    "ok": true,
-   "lastSuccess": "2026-11-14",
-   "note": "일부 공고 404"
+   "lastSuccess": "2026-11-26",
+   "note": "일부 공고 404",
+   "lastAttempt": "2026-11-26"
   },
   {
    "name": "Netflix Careers",
    "ok": true,
-   "lastSuccess": "2026-11-14",
-   "note": "상세 자격요건 잘림"
+   "lastSuccess": "2026-11-26",
+   "note": "공고 레코드 확인, 지원 버튼은 텍스트로 미확인",
+   "lastAttempt": "2026-11-26"
   },
   {
    "name": "필름메이커스",
@@ -44,6 +50,31 @@
    "name": "LinkedIn",
    "ok": false,
    "note": "로그인 필요, 미수집"
+  },
+  {
+   "name": "HYBE 채용페이지(greetinghr)",
+   "ok": true,
+   "lastAttempt": "2026-11-26",
+   "lastSuccess": "2026-11-26",
+   "note": "18건 중 3건 접속 오류"
+  },
+  {
+   "name": "쿠팡 채용페이지",
+   "ok": false,
+   "lastAttempt": "2026-11-26",
+   "note": "접속 오류(client_error)"
+  },
+  {
+   "name": "Meitu 채용페이지",
+   "ok": true,
+   "lastAttempt": "2026-11-26",
+   "lastSuccess": "2026-11-26"
   }
- ]
+ ],
+ "summary": {
+  "new": 2,
+  "changed": 8,
+  "closed": 6,
+  "unreachable": 15
+ }
 }
