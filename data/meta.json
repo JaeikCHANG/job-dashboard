@@ -1,40 +1,41 @@
 {
- "lastRun": "2026-11-26T10:05:00+09:00",
+ "lastRun": "2026-11-27T09:50:00+09:00",
  "by": "예약 보강(재익 계정)",
  "sources": [
   {
    "name": "원티드 API",
-   "ok": true,
+   "ok": false,
    "lastSuccess": "2026-11-26",
-   "note": "38건 중 8건 확인, 8건 robots 차단, 22건 확인 실패(가져오기 권한 시간 초과)",
-   "lastAttempt": "2026-11-26"
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지",
+   "lastAttempt": "2026-11-27"
   },
   {
    "name": "TikTok 채용페이지",
    "ok": true,
-   "lastSuccess": "2026-11-26",
-   "lastAttempt": "2026-11-26",
-   "note": "일부 상세 본문 렌더링 안 됨"
+   "lastSuccess": "2026-11-27",
+   "lastAttempt": "2026-11-27",
+   "note": "일부 상세 본문 렌더링 안 됨, 신규 1건 공식 확인"
   },
   {
    "name": "인크루트",
-   "ok": true,
+   "ok": false,
    "lastSuccess": "2026-11-26",
-   "lastAttempt": "2026-11-26"
+   "lastAttempt": "2026-11-27",
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   },
   {
    "name": "Disney Careers",
-   "ok": true,
+   "ok": false,
    "lastSuccess": "2026-11-26",
-   "note": "일부 공고 404",
-   "lastAttempt": "2026-11-26"
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지",
+   "lastAttempt": "2026-11-27"
   },
   {
    "name": "Netflix Careers",
-   "ok": true,
+   "ok": false,
    "lastSuccess": "2026-11-26",
-   "note": "공고 레코드 확인, 지원 버튼은 텍스트로 미확인",
-   "lastAttempt": "2026-11-26"
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지",
+   "lastAttempt": "2026-11-27"
   },
   {
    "name": "필름메이커스",
@@ -53,28 +54,29 @@
   },
   {
    "name": "HYBE 채용페이지(greetinghr)",
-   "ok": true,
-   "lastAttempt": "2026-11-26",
+   "ok": false,
+   "lastAttempt": "2026-11-27",
    "lastSuccess": "2026-11-26",
-   "note": "18건 중 3건 접속 오류"
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   },
   {
    "name": "쿠팡 채용페이지",
    "ok": false,
-   "lastAttempt": "2026-11-26",
-   "note": "접속 오류(client_error)"
+   "lastAttempt": "2026-11-27",
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   },
   {
    "name": "Meitu 채용페이지",
-   "ok": true,
-   "lastAttempt": "2026-11-26",
-   "lastSuccess": "2026-11-26"
+   "ok": false,
+   "lastAttempt": "2026-11-27",
+   "lastSuccess": "2026-11-26",
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   }
  ],
  "summary": {
-  "new": 2,
-  "changed": 8,
-  "closed": 6,
-  "unreachable": 15
+  "new": 3,
+  "changed": 1,
+  "closed": 0,
+  "unreachable": 0
  }
 }

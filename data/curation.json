@@ -1,5 +1,5 @@
 {
- "lastUpdated": "2026-11-26T10:05:00+09:00",
+ "lastUpdated": "2026-11-27T09:50:00+09:00",
  "note": "수동 검증·적합도 보강 데이터. postings.json 위에 덮어 표시됨(같은 id면 이 값 우선). 개인정보 없음.",
  "overrides": {
   "wife-hybe-pledis-video-content-planning": {
@@ -643,6 +643,12 @@
    "feasibility": "상",
    "recommend": false,
    "fitReason": "유튜브 웹예능·숏폼 실무 PD, 직급·방향 하향"
+  },
+  "wife-mel-ai-content-pd": {
+   "fitScore": 55,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "AI 캐릭터·생성형AI 영상 기획·제작으로 AI 드라마 자체제작 경험과 연결, 다만 소셜앱 캐릭터 기획 중심"
   }
  },
  "add": [
@@ -747,6 +753,85 @@
    "recommend": false,
    "fitReason": "BeautyPlus·AI 이미지 앱 한국 크리에이터·인플루언서 그로스 마케팅, 중국어 활용 가능하나 제작 경력과 방향 다름",
    "note": "공식 페이지 Apply 버튼 확인, 2026-08-12 게시"
+  },
+  {
+   "id": "wife-tiktok-content-acquisition-development-principal-kr",
+   "person": "wife",
+   "title": "Principal, Content Acquisition & Development - Celebrities and Digital Originals (South Korea)",
+   "company": "TikTok (ByteDance)",
+   "url": "https://lifeattiktok.com/search/7600306145966606597",
+   "deadline": null,
+   "status": "check",
+   "foundDate": "2026-11-27",
+   "checkedDate": "2026-11-27",
+   "source": "TikTok 채용페이지",
+   "sources": [
+    {
+     "name": "TikTok 채용페이지",
+     "url": "https://lifeattiktok.com/search/7600306145966606597"
+    },
+    {
+     "name": "The Muse",
+     "url": "https://www.themuse.com/jobs/tiktok/principal-content-acquisition-development-celebrities-and-digital-originals-south-korea"
+    }
+   ],
+   "location": "서울",
+   "employmentType": "확인 필요",
+   "fitScore": 60,
+   "feasibility": "중",
+   "recommend": true,
+   "fitReason": "콘텐츠 수급·딜 협상·IP 지식 요구로 라이선싱·공동제작 경력과 맞음, 셀럽·기획사 네트워크는 약점",
+   "note": "공식 페이지 미확인(본문 렌더링 안 됨). The Muse 기준 2026-01-29 게시, 60일 초과. 기존 Manager 공고(7600308397548357941)의 상위 직급 별도 공고"
+  },
+  {
+   "id": "wife-tiktok-live-music-creator-growth-partnerships-kr",
+   "person": "wife",
+   "title": "Music Creator Growth & Partnerships Manager - TikTok LIVE Korea",
+   "company": "TikTok (ByteDance)",
+   "url": "https://lifeattiktok.com/search/7646360310790375685",
+   "deadline": null,
+   "status": "open",
+   "foundDate": "2026-11-27",
+   "checkedDate": "2026-11-27",
+   "source": "TikTok 채용페이지",
+   "sources": [
+    {
+     "name": "TikTok 채용페이지",
+     "url": "https://lifeattiktok.com/search/7646360310790375685"
+    }
+   ],
+   "location": "서울",
+   "employmentType": "정규직",
+   "fitScore": 40,
+   "feasibility": "하",
+   "recommend": false,
+   "fitReason": "크리에이터 성장·파트너십 업무이나 음악 크리에이터·아티스트 관계 중심으로 제작 경력과 거리",
+   "note": "Job Code A82659. 공식 페이지 Apply 버튼 확인(보조 조사 결과), 2026-06-02 게시"
+  },
+  {
+   "id": "wife-tiktok-creator-activation-development-principal-kr",
+   "person": "wife",
+   "title": "Principal, Creator Activation & Development (South Korea)",
+   "company": "TikTok (ByteDance)",
+   "url": "https://www.themuse.com/jobs/tiktok/principal-creator-activation-development-south-korea",
+   "deadline": null,
+   "status": "check",
+   "foundDate": "2026-11-27",
+   "checkedDate": "2026-11-27",
+   "source": "The Muse",
+   "sources": [
+    {
+     "name": "The Muse",
+     "url": "https://www.themuse.com/jobs/tiktok/principal-creator-activation-development-south-korea"
+    }
+   ],
+   "location": "서울",
+   "employmentType": "확인 필요",
+   "fitScore": 50,
+   "feasibility": "중",
+   "recommend": false,
+   "fitReason": "크리에이터·MCN·스튜디오 대상 콘텐츠 수급/운영, 크리에이터 계약·IP 지식 우대. 크리에이터 관리 경력은 약함",
+   "note": "공식 페이지 미확인(TikTok-7600310462102456629). 플랫폼에서만 확인, 2026-01-29 게시, 60일 초과"
   }
  ]
 }
