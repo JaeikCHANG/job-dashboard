@@ -1,5 +1,5 @@
 {
- "lastRun": "2026-11-27T09:50:00+09:00",
+ "lastRun": "2026-11-28T09:40:00+09:00",
  "by": "예약 보강(재익 계정)",
  "sources": [
   {
@@ -7,20 +7,20 @@
    "ok": false,
    "lastSuccess": "2026-11-26",
    "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지",
-   "lastAttempt": "2026-11-27"
+   "lastAttempt": "2026-11-28"
   },
   {
    "name": "TikTok 채용페이지",
-   "ok": true,
+   "ok": false,
    "lastSuccess": "2026-11-27",
-   "lastAttempt": "2026-11-27",
-   "note": "일부 상세 본문 렌더링 안 됨, 신규 1건 공식 확인"
+   "lastAttempt": "2026-11-28",
+   "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   },
   {
    "name": "인크루트",
    "ok": false,
    "lastSuccess": "2026-11-26",
-   "lastAttempt": "2026-11-27",
+   "lastAttempt": "2026-11-28",
    "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   },
   {
@@ -28,14 +28,14 @@
    "ok": false,
    "lastSuccess": "2026-11-26",
    "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지",
-   "lastAttempt": "2026-11-27"
+   "lastAttempt": "2026-11-28"
   },
   {
    "name": "Netflix Careers",
    "ok": false,
    "lastSuccess": "2026-11-26",
    "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지",
-   "lastAttempt": "2026-11-27"
+   "lastAttempt": "2026-11-28"
   },
   {
    "name": "필름메이커스",
@@ -55,28 +55,31 @@
   {
    "name": "HYBE 채용페이지(greetinghr)",
    "ok": false,
-   "lastAttempt": "2026-11-27",
+   "lastAttempt": "2026-11-28",
    "lastSuccess": "2026-11-26",
    "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   },
   {
    "name": "쿠팡 채용페이지",
    "ok": false,
-   "lastAttempt": "2026-11-27",
+   "lastAttempt": "2026-11-28",
    "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   },
   {
    "name": "Meitu 채용페이지",
    "ok": false,
-   "lastAttempt": "2026-11-27",
+   "lastAttempt": "2026-11-28",
    "lastSuccess": "2026-11-26",
    "note": "오늘 가져오기 권한 시간 초과로 확인 실패, 기존 상태 유지"
   }
  ],
  "summary": {
-  "new": 3,
-  "changed": 1,
+  "new": 0,
+  "changed": 0,
   "closed": 0,
   "unreachable": 0
- }
+ },
+ "issues": [
+  "postings.json 에 id \"wife-vigloo-spoonlabs-ai-shortdrama-executive-producer\" 가 2건(wd/387264, wd/398918) 중복 — 아내 작업 쪽 확인 필요"
+ ]
 }
